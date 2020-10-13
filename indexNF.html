@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"/>
 		<title>VertexGroup</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -12,15 +12,35 @@
 			<a href="index.html"><img src="icons/1.png" alt="VertexGroup" align="left" class="h5"></a>
 			<p align="right" class="h5">+7 499 579-92-69</p>
 		</div></br>
-		<div class="divv">
-			<select class="menuu" onchange="window.location.href=this.options[this.selectedIndex].value">
-				<option value="index.html" selected>Главная</option>
-				<option value="about/index.html">О компании</option>
-				<option value="services/index.html">Услуги</option>
-				<option value="codex/index.html">Кодекс</option>
-				<option value="contacts/index.html">Контакты</option>
-				<option value="reviews/index.html">Отзывы</option>
-			</select>			
+		<div class="menuu" id="div">
+			<table id="padmenu" border="0px" align="center">
+				<thead align="center">
+					<tr align="center">
+						<td id="padmenutd" align="center" height="50px">
+							<div class="but" align="center">
+								<p class="ul2" id="mg000" align="center">Главная</p>
+								<ul align="center" width="1200px">
+									<a class="ul" href="about/index.html"><li class="li3">О компании</li></a>
+									<a class="ul" href="services/index.html"><li class="li">Услуги</li></a>
+									<a class="ul" href="codex/index.html"><li class="li">Кодекс</li></a>
+									<a class="ul" href="contacts/index.html"><li class="li">Контакты</li></a>
+									<a class="ul" href="reviews/index.html"><li class="li2">Отзывы</li></a>
+								</ul>
+							</div>
+						</td>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<div>
+			<!-- <select class="menuu" onchange="window.location.href=this.options[this.selectedIndex].value"> -->
+				<!-- <option value="index.html" selected>Главная</option> -->
+				<!-- <option value="about/index.html">О компании</option> -->
+				<!-- <option value="services/index.html">Услуги</option> -->
+				<!-- <option value="codex/index.html">Кодекс</option> -->
+				<!-- <option value="contacts/index.html">Контакты</option> -->
+				<!-- <option value="reviews/index.html">Отзывы</option> -->
+			<!-- </select>			 -->
 			<a class="link" id="qwe123">Главная</a>
 			<a class="link" href="about/index.html">О компании</a>
 			<a class="link" href="services/index.html">Услуги</a>
@@ -28,7 +48,7 @@
 			<a class="link" href="contacts/index.html">Контакты</a>
 			<a class="link" href="reviews/index.html">Отзывы</a>
 		</div>
-		<table class="table2" border = "0px">
+		<table class="table2" border="0px">
 			<tr>
 				<td>
 					<a href="services/index.html#ocenka" class="link2"><img src="icons/r1.png" alt="‎" class="znak" align="center"></a>
@@ -93,10 +113,10 @@
 			<table class="tdeventtop" border="0px">
 				<tr>
 					<td colspan="4">
-						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Отраслевая специализация наших клиентов</p></a>
+						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Наши клиенты</p></a>
 					</td>
 					<td colspan="2">
-						<a href="events/index.html" id="linkevents"><p class="h3" class="tb" align="center">События</p></a>
+						<a href="events/index.html" id="linkevents"><p class="h3" class="tb" align="left">События</p></a>
 					</td>	
 				</tr>
 				<tr>
@@ -118,16 +138,16 @@
 					</td>
 					<td class="tb" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r1" class="eventlink" id="check2">Завершен проект оценки имущества ООО "Развитие-М"</a>
-						<p class="p1" id="check2">16.06.2020г. Специалистами ООО "ВЕРТЕКС" успешно завершен проект оценки имущества ООО "Развитие-М" (ГК "ВОСТОК-ЗАПАД") для целей МСФО.</p>
+						<a href="events/index.html#r1" class="eventlink" id="check2">Встреча выпускников и слушателей программ переподготовки</a>
+						<p class="p1" id="check2">06.12.2019г. прошла ежегодная встреча выпускников и слушателей программ переподготовки и МВА по недвижимости ИОМ РАНХиГС</p>
 					</div>
 					</td>
 				</tr>
 				<tr>
 					<td class="tb" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r2" class="eventlink" id="check2">Завершен проект оценки объекта недвижимости КАСТОРАМА РУС в Перми</a>
-						<p class="p1" id="check2">30.04.2020г. Наши специалисты завершили проект оценки объекта недвижимости КАСТОРАМА РУС в Перми.</p>
+						<a href="events/index.html#r2" class="eventlink" id="check2">Лекция профессора Тома Берхаута</a>
+						<p class="p1" id="check2">24.10.2019г. Генеральный директор ООО «ВЕРТЕКС» Колотвинова Анастасия приняла участие в подготовке и проведении открытой лекции профессора Тома Берхаута</p>
 					</div>
 					</td>
 				</tr>
@@ -148,18 +168,18 @@
 						<img src="icons/8pc.png" alt="‎" id="widthicon" align="center" >
 						<p align="center" class="h6" width="110px" id="check1">IT-телекоммуникациии</p>
 					</td>
-					<td class="tb" colspan="2">
+					<td id="b" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r3" class="eventlink" id="check2">Встреча выпускников и слушателей программ переподготовки</a>
-						<p class="p1" id="check2">06.12.2019г. прошла ежегодная встреча выпускников и слушателей программ переподготовки и МВА по недвижимости ИОМ РАНХиГС</p>
+						<a href="events/index.html#r3" class="eventlink" id="check2">Первая в 2019 году лекция профессора Тома Берхаута</a>
+						<p class="p1" id="check2">21.10.2019г. Лекция была посвящена стандартам оценки, а также основным принципам оценки, видам стоимости, профессиональной этике.</p>
 					</div>
 					</td>
 				</tr>
 				<tr>
-					<td class="tb" colspan="2">
+					<td id="b" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r4" class="eventlink" id="check2">Лекция профессора Тома Берхаута</a>
-						<p class="p1" id="check2">24.10.2019г. Генеральный директор ООО «ВЕРТЕКС» Колотвинова Анастасия приняла участие в подготовке и проведении открытой лекции профессора Тома Берхаута</p>
+						<a href="events/index.html#r4" class="eventlink" id="check2">Завершение оценки комплекса ООО «Касторама РУС»</a>
+						<p class="p1" id="check2">21.10.2019г. Наши оценщики завершили работу по оценке имущественного комплекса ООО «Касторама РУС».</p>
 					</div>
 					</td>
 				</tr>
@@ -180,21 +200,21 @@
 						<img src="icons/12news.png" alt="‎" id="widthicon2" align="center">
 						<p align="center" class="h6" width="110px">Издательства</p>
 					</td>
-					<td id="b" colspan="2">
+					<td class="tb" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r5" class="eventlink" id="check2">Первая в 2019 году лекция профессора Тома Берхаута</a>
-						<p class="p1" id="check2">21.10.2019г. Лекция была посвящена стандартам оценки, а также основным принципам оценки, видам стоимости, профессиональной этике.</p>
+						<a href="events/index.html#r5" class="eventlink" id="check2">Наш друг и коллега Том Берхаут в Москве!</a>
+						<p class="p1" id="check2">21.10.2019г. Профессор Том Берхаут прочитает курс лекций студентам РАНХиГС</p>
 					</div>
 					</td>
 				</tr>
 				<tr>
-					<td id="b" colspan="2">
+					<td class="b" colspan="2">
 					<div id="mar6">
-						<a href="events/index.html#r6" class="eventlink" id="check2">Завершение оценки комплекса ООО «Касторама РУС»</a>
-						<p class="p1" id="check2">21.10.2019г. Наши оценщики завершили работу по оценке имущественного комплекса ООО «Касторама РУС».</p>
+						<a href="events/index.html#r6" class="eventlink" id="check2">Вышел Альманах Деловые женщины России 2019г</a>
+						<p class="p1" id="check2">18.10.2019г. Издательство «Время Инноваций» выпустило Альманах «Деловые женщины России» 2019 года</p>
 					</div>
 					</td>
-				</tr>
+					</tr>
 				<tr>
 					<td colspan="4" align="center">
 						<a href="about/index.html#clients" class="link3"><img src="icons/next.png" alt="Далее" align="center" id="mr10" width="130px"></a>
@@ -212,40 +232,41 @@
 				</tr>
 				<tr>
 					<td class="tb" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r7" class="eventlink" id="check2"Завершен проект оценки имущества ООО "Развитие-М"</a>
-						<p class="p1" id="check2">16.06.2020г. Специалистами ООО "ВЕРТЕКС" успешно завершен проект оценки имущества ООО "Развитие-М" (ГК "ВОСТОК-ЗАПАД") для целей МСФО.</p>
-					</td>
-				</tr>
-				<tr>
-					<td class="b" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r8" class="eventlink" id="check2">Завершен проект оценки объекта недвижимости КАСТОРАМА РУС в Перми</a>
-						<p class="p1" id="check2">30.04.2020г. Наши специалисты завершили проект оценки объекта недвижимости КАСТОРАМА РУС в Перми.</p>
-					</td>
-				</tr>
-				<tr>
-					<td class="b" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r9" class="eventlink" id="check2">Встреча выпускников и слушателей программ переподготовки</a>
+						<a href="events/index.html#r7" class="eventlink" id="check2">Встреча выпускников и слушателей программ переподготовки</a>
 						<p class="p1" id="check2">06.12.2019г. прошла ежегодная встреча выпускников и слушателей программ переподготовки и МВА по недвижимости ИОМ РАНХиГС</p>
 					</td>
 				</tr>
 				<tr>
 					<td class="b" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r10" class="eventlink" id="check2">Лекция профессора Тома Берхаута</a>
+						<a href="events/index.html#r8" class="eventlink" id="check2">Лекция профессора Тома Берхаута</a>
 						<p class="p1" id="check2">24.10.2019г. Генеральный директор ООО «ВЕРТЕКС» Колотвинова Анастасия приняла участие в подготовке и проведении открытой лекции профессора Тома Берхаута</p>
 					</td>
 				</tr>
 				<tr>
 					<td class="b" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r11" class="eventlink" id="check2">Первая в 2019 году лекция профессора Тома Берхаута</a>
+						<a href="events/index.html#r9" class="eventlink" id="check2">Первая в 2019 году лекция профессора Тома Берхаута</a>
 						<p class="p1" id="check2">21.10.2019г. Лекция была посвящена стандартам оценки, а также основным принципам оценки, видам стоимости, профессиональной этике.</p>
 					</td>
 				</tr>
 				<tr>
 				<td class="b" id = "left" width="800px" height="100px">
-						<a href="events/index.html#r12" class="eventlink" id="check2">Завершение оценки комплекса ООО «Касторама РУС»</a>
+						<a href="events/index.html#r10" class="eventlink" id="check2">Завершение оценки комплекса ООО «Касторама РУС»</a>
 						<p class="p1" id="check2">21.10.2019г. Профессор Том Берхаут прочитает курс лекций студентам РАНХиГС</p>
 					</td>
 				</tr>
+				<tr>
+					<td class="b" id = "left" width="800px" height="100px">
+						<a href="events/index.html#r11" class="eventlink" id="check2">Наш друг и коллега Том Берхаут в Москве!</a>
+						<p class="p1" id="check2">21.10.2019г. Наши оценщики завершили работу по оценке имущественного комплекса ООО «Касторама РУС».</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="b" id = "left" width="800px" height="100px">
+						<a href="events/index.html#r12" class="eventlink" id="check2">Вышел Альманах Деловые женщины России 2019г</a>
+						<p class="p1" id="check2">18.10.2019г. Издательство «Время Инноваций» выпустило Альманах «Деловые женщины России» 2019 года</p>
+					</td>
+				</tr>
+				<tr>
 					<td colspan="3" align="ctnter">
 						<a href="events/index.html"><img src="icons/next.png" alt="Далее" align="center" id="mr10" width="100px"></a>
 					</td>
@@ -254,7 +275,7 @@
 			<table class="split2" align="center" border="0px">
 				<tr>
 					<td class="b" colspan="4">
-						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Отраслевая специализация наших клиентов</p></a>
+						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Наши клиенты</p></a>
 					</td>
 				</tr>
 					<td class="wid120">
@@ -320,7 +341,7 @@
 			<table class="split3" align="center" border="0px">
 				<tr>
 					<td class="b" colspan="3">
-						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Отраслевая специализация наших клиентов</p></a>
+						<a href="about/index.html#clients" class="link3"><p class="h3" align="center">Наши клиенты</p></a>
 					</td>
 				</tr>
 					<td class="widsz2">
