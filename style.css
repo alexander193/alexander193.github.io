@@ -50,6 +50,10 @@ li {
 	background-color: green;
 	color: white;
 	text-decoration: none;
-	padding: 10px;
-	border-radius: 5px;
+	padding-left: 2.4vw;
+	padding-right: 2.4vw;
+	padding-top: 1.2vw;
+	padding-bottom: 1.2vw;
+	border-radius: 1.2vw;
+	font-size: 2.4vw;
 }
