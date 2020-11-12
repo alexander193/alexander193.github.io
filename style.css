@@ -1,0 +1,58 @@
+.img_page {
+	width: 30vw;
+}
+table {
+	border-collapse: collapse;
+}
+#page_table {
+	margin-top: -20px;
+}
+.th {
+	border: 3px solid green;
+	padding: 8px;
+}
+.th_page {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+body {
+	text-align: center;
+}
+p {
+	margin: 0px;
+	margin-bottom: 5px;
+}
+.a {
+	text-decoration: none;
+	color: black;
+}
+.green {
+	color: green;
+	font-size: 150%;
+}
+#heading {
+	color: green;
+	font-size: 300%;
+	margin: 20px;
+}
+ul {
+	margin-left: -20px;
+}
+li {
+	text-align: left;
+}
+#a_back {
+	background-color: green;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 5px;
+}
+.th:hover 
+	.green {
+		background-color: green;
+		color: white;
+		width: 10vw;
+		border-radius: 4px;
+	}
+	/* background-color: red; */
