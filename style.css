@@ -63,3 +63,20 @@ p {
 		display: grid;
 	}
 }
+h1 {
+	text-align: left;
+	color: #71c8dc;
+	font-size: 180%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h3 {
+	text-align: left;
+	color: #71c8dc;
+	font-size: 150%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.td {
+			 border-bottom: 2px solid #71c8dc;
+}
