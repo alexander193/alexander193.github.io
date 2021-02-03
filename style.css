@@ -3,6 +3,10 @@ body {
 	max-width: 1200px;
 	width: 90%;
 	margin: auto;
+	min-width: 550px;
+}
+table {
+	min-width: 550px;
 }
 p {
 	font: Times New Roman;
@@ -36,7 +40,7 @@ p {
 #grid2 { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1vw;
+  grid-gap: 0.5vw;
   }
 #grid2 > div {
   background: #71c8dc;
@@ -47,7 +51,7 @@ p {
 #grid3 { 
   display: none;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 1vw;
+  grid-gap: 0.5vw;
   }
 #grid3 > div {
   background: #71c8dc;
@@ -55,7 +59,7 @@ p {
 #grid3 div:hover {
   background-color: #31889c;
 }
-@media screen and (max-width: 1200px)	{
+@media screen and (max-width: 1175px)	{
 	#grid2 {
 		display: none;
 	}
@@ -78,5 +82,8 @@ h3 {
 	margin-bottom: 10px;
 }
 .td {
-			 border-bottom: 2px solid #71c8dc;
+	border-bottom: 2px solid #71c8dc;
+}
+div {
+	border-radius: 8px;
 }
