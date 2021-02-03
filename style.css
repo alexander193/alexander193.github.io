@@ -67,6 +67,18 @@ p {
 		display: grid;
 	}
 }
+#grid4 { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 2vw;
+  padding-bottom: 20px;
+  }
+#grid4 > div {
+  
+  text-align: center;
+}
+#grid4 div {
+}
 h1 {
 	text-align: left;
 	color: #71c8dc;
