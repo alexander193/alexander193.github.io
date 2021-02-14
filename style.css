@@ -5,6 +5,7 @@ body {
 .menu {
 	color: black;
 	text-align: center;
+	transition: 0.5s;
 }
 .logo {
 	font-size: 26px;
@@ -27,6 +28,7 @@ p {
 	color: #D69D5A
 }
 .top {
+	z-index: 999999;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -86,7 +88,7 @@ a {
   grid-template-rows: repeat(6, 200px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px)); */
-  grid-gap: 20px;
+  
   padding: 20px;
   max-width: 900px;
   box-sizing: border-box;
@@ -94,6 +96,7 @@ a {
 .post-1 {
   grid-row-start: 1;
   grid-column-start: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
 .post-2 {
   grid-row-start: 1;
@@ -103,13 +106,16 @@ a {
   background: url('images/cottage1.jpg');
   background-size: contain;
   box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0,0,0,5);
+  box-shadow: 0 0 5px rgba(0,0,0,1);
+  width: 400px;
+  height: 400px;
 }
 .post-3 {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 4;
   grid-column-end: 2;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
   /* background: url('images/cottage2.jpg'); */
   /* background-size: contain; */
 }
@@ -118,20 +124,24 @@ a {
   grid-column-start: 2;
   grid-row-end: 5;
   grid-column-end: 3;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
 .post-5 {
   grid-row-start: 4;
   grid-column-start: 1;
   grid-row-end: 6;
   grid-column-end: 2;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
 .post-6 {
   grid-row-start: 5;
   grid-column-start: 2;
   grid-row-end: 7;
   grid-column-end: 3;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
 .post-7 {
   grid-row-start: 6;
   grid-column-start: 1;
+  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
