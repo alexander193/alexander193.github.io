@@ -20,6 +20,9 @@ body {
 .gold {
 	color: #D69D5A;
 }
+.white {
+	color: #FFFFFF;
+}
 .bold {
 	font-weight: bold;
 }
@@ -28,7 +31,6 @@ p {
 	color: #D69D5A
 }
 .top {
-	z-index: 999999;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -85,10 +87,10 @@ a {
 }
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(6, 200px);
+  grid-template-rows: repeat(5, 180px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px)); */
-  
+  grid-gap: 32.3px;
   padding: 20px;
   max-width: 900px;
   box-sizing: border-box;
@@ -96,7 +98,6 @@ a {
 .post-1 {
   grid-row-start: 1;
   grid-column-start: 1;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
 }
 .post-2 {
   grid-row-start: 1;
@@ -106,42 +107,53 @@ a {
   background: url('images/cottage1.jpg');
   background-size: contain;
   box-sizing: border-box;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
-  width: 400px;
-  height: 400px;
+  box-shadow: 0 0 2px rgba(0,0,0,1);
 }
 .post-3 {
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 4;
   grid-column-end: 2;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
-  /* background: url('images/cottage2.jpg'); */
-  /* background-size: contain; */
+  box-shadow: 0 0 2px rgba(0,0,0,1);
+  background: url('images/cottage2.jpg');
+  background-size: contain;
 }
 .post-4 {
   grid-row-start: 3;
   grid-column-start: 2;
   grid-row-end: 5;
   grid-column-end: 3;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
+  box-shadow: 0 0 2px rgba(0,0,0,1);
+  background: url('images/cottage3.jpg');
+  background-size: contain;
 }
 .post-5 {
   grid-row-start: 4;
   grid-column-start: 1;
   grid-row-end: 6;
   grid-column-end: 2;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
+  box-shadow: 0 0 2px rgba(0,0,0,1);
+  background: url('images/cottage4.jpg');
+  background-size: contain;
 }
 .post-6 {
   grid-row-start: 5;
   grid-column-start: 2;
-  grid-row-end: 7;
-  grid-column-end: 3;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
+  box-shadow: 0 0 2px rgba(0,0,0,1);
 }
-.post-7 {
-  grid-row-start: 6;
-  grid-column-start: 1;
-  box-shadow: 0 0 5px rgba(0,0,0,1);
+.test {
+	transition: 0.5s;
+	background-color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	vertical-align: center;
+	color: #777777;
+}
+.test:hover {
+	transition: 0.5s;
+	background-color: #777777;
+	border: 2px solid #777777	;
+	color: #FFFFFF;
 }
