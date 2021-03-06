@@ -1,6 +1,7 @@
 .slider {
 	position: relative;
 	overflow: hidden;
+	z-index: -5;
 }
 .slider__wrapper {
 	margin-top: 55px;
