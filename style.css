@@ -3,10 +3,8 @@ body {
 	margin: 0px;
 }
 .wallpaper {
-	background: url('images/main_house2.jpg');
 	width: 100%;
-	height: 500px;
-	margin-top: 0px;;
+	
 }
 .empty {
 	width: 100%;
@@ -50,11 +48,12 @@ body {
 	transition: 0.5s;
 }
 .menu {
+	text-align: center;
 	color: black;
 	transition: 0.5s;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(0px, 25%));
-	position: fixed;
+	position: block;
 	width: 100%;
 	height: 60px;
 	background-color: white;
