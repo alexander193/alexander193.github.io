@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>LuxCottages</title>
@@ -8,8 +7,33 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slider.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+	<style type="text/css">
+		#example .new {
+			opacity: 0;
+		}
 
+		#example .div_opacity {
+			-webkit-transition: opacity .2s ease-in-out;
+			-moz-transition: opacity .2s ease-in-out;
+			-ms-transition: opacity .2s ease-in-out;
+			-o-transition: opacity .2s ease-in-out;
+			transition: opacity .2s ease-in-out;
+			opacity: 1;
+		}
+		#example2 .new {
+			opacity: 0;
+		}
+
+		#example2 .div_opacity {
+			-webkit-transition: opacity .2s ease-in-out;
+			-moz-transition: opacity .2s ease-in-out;
+			-ms-transition: opacity .2s ease-in-out;
+			-o-transition: opacity .2s ease-in-out;
+			transition: opacity .2s ease-in-out;
+			opacity: 1;
+		}
+	</style>
+</head>
 <body align="center">
 
 	<div class="menu dc" style="box-shadow: 0 0 10px rgba(0,0,0,0.5);">
@@ -34,40 +58,31 @@
 			</a>
 		</div>
 	</div>
-<!--
-	<div class="empty">
-	</div>
-	<!--
-	<div class="wallpaper">
-		<p class="heading white" style="font-size: 400%; margin: 0px; padding-bottom: 0px; padding-top: 150px;">Шикарные
-			коттеджи</p>
-		<p class="heading white" style="font-size: 120%; margin-top: 5px; margin-bottom: 5px;">Отдых в нашем коттедже -
-			это отличный способ провести выходные или отпуск.</p>
-		<p class="heading white" style="font-size: 120%; margin-top: 0px; margin-bottom: 5px;">У нас есть все удобства и
-			различные развлечения.</p>
-		<p class="heading white" style="font-size: 120%; margin-top: 0px; margin-bottom: 30px;">Посмотрите и выберите,
-			какой котедж подходит именно Вам.</p>
-		<a href="" class="heading bold gold wallurl bgw">О нас</a>
-		<a href="" class="heading bold white wallurl bgg">Галерея</a>
-	</div>-->
-	<script src="slider.js"></script>
+
 	<div class="slider" style="background-color: #EEEEEE;">
 		<div class="slider__wrapper">
 			<div class="slider__item">
-				<div style="background: url('images/main_house.jpg'); background-size: 100%; margin: 0px; padding: 0px; height: 41vw; line-height: 41vw;">
-					<p style="font-size: 48pt; color: white; margin: 0px; height: 41vw; line-height: 41vw;">Тут текст</p>
+				<div
+					style="background: url('images/main_house.jpg'); background-size: 100%; margin: 0px; padding: 0px; height: 41vw; line-height: 41vw;">
+					<p id="example"
+						style="display: none; font-size: 40pt; color: white; margin: 0px; height: 41vw; line-height: 41vw;">
+						Появляющийся текст
+					</p>
 				</div>
 			</div>
 			<div class="slider__item">
-				<div style="background: url('images/main_house2.jpg'); background-size: 100%; margin: 0px; padding: 0px; height: 41vw; line-height: 41vw;">
-					<p style="font-size: 48pt; color: white; margin: 0px; height: 41vw; line-height: 41vw;">И тут текст</p>
+				<div
+					style="background: url('images/main_house2.jpg'); background-size: 100%; margin: 0px; padding: 0px; height: 41vw; line-height: 41vw;">
+					<p id="example2"
+						style="display: none; font-size: 40pt; color: white; margin: 0px; height: 41vw; line-height: 41vw;">
+						Появляющийся текст 2
+					</p>
 				</div>
 			</div>
 		</div>
 		<a class="slider__control slider__control_left" href="#" role="button"></a>
 		<a class="slider__control slider__control_right" href="#" role="button"></a>
 	</div>
-
 	<div style="background-color: #FBFBFB;">
 		<table height="600px" width="100%">
 			<tr>
@@ -167,8 +182,7 @@
 		</div>
 		<p class="basement_text dc">© LuxCottages, 2021</p>
 	</div>
-	<script src="slider.js">
-	</script>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="slider.js"></script>
 </html>
