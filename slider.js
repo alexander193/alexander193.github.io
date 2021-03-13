@@ -129,11 +129,19 @@ var multiItemSlider = (function () {
         _transform += _step;
       }
       if (active == 1)
-      active = 2;
+        active = 2;
       else
-      active = 1;
+        active = 1;
       _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
-      animate();
+      if (active == 1) {
+        $('#example').hide();
+      }
+      else {
+        $('#example2').hide();
+      }
+      window.setTimeout(function () {
+        animate();
+      }, 200);
     }
 
     var _cycle = function (direction) {
@@ -245,26 +253,26 @@ var slider = multiItemSlider('.slider', {
 });
 
 function animate() {
-  $.fn.animate_Text = function() {
+  $.fn.animate_Text = function () {
     var string = this.text();
-    return this.each(function(){
-     var $this = $(this);
-     $this.html(string.replace(/./g, '<span class="new">$&</span>'));
-     $this.find('span.new').each(function(i, el){
-      setTimeout(function(){ $(el).addClass('div_opacity'); }, 20 * i);
-     });
+    return this.each(function () {
+      var $this = $(this);
+      $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+      $this.find('span.new').each(function (i, el) {
+        setTimeout(function () { $(el).addClass('div_opacity'); }, 20 * i);
+      });
     });
-   };
-   if (active == 1) { 
-   $('#example').show();
-   $('#example').animate_Text();
-   }
-   else {
+  };
+  if (active == 1) {
+    $('#example').show();
+    $('#example').animate_Text();
+  }
+  else {
     $('#example2').show();
     $('#example2').animate_Text();
-   }
+  }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   animate();
- });
+});
