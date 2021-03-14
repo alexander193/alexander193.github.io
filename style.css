@@ -51,14 +51,14 @@ body {
 	color: black;
 	transition: 0.5s;
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 20% 80%;
 	position: block;
-	width: 1000px;
+	width: 1200px;
 	height: 60px;
 	background-color: white;
 	font-size: 26px;
-	margin-left: calc((100% - 1000px) / 2);
-	margin-right: calc((100% - 1000px) / 2);
+	margin-left: calc((100% - 1200px) / 2);
+	margin-right: calc((100% - 1200px) / 2);
 }
 .menu2 {
 	text-align: center;
@@ -142,10 +142,28 @@ a {
   grid-template-rows: repeat(5, 180px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px)); */
-  grid-gap: 32.3px;
+  grid-gap: 30px;
   padding: 20px;
-  max-width: 900px;
+  max-width: 1200px;
   box-sizing: border-box;
+}
+.grid-container2 {
+  display: none;
+  grid-template-rows: repeat(10, 180px);
+  grid-template-columns: 100%;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 400px)); */
+  grid-gap: 30px;
+  padding: 20px;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px)	{
+	.grid-container {
+		display: none;
+	}
+	.grid-container2 {
+		display: grid;
+	}
 }
 .post-1 {
   grid-row-start: 1;
@@ -156,17 +174,12 @@ a {
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 3;
-  background: url('images/cottage1.jpg');
-  background-size: contain;
+  background: url('images/cottage1.jpg') center center;
+  background-size: cover;
   box-sizing: border-box;
   box-shadow: 0 0 2px rgba(0,0,0,1);
   transition: 0.5s;
-}
-.hide {
-	display: none;
-}
-.post-2:hover .hide {
-	display: block;
+  background-position: center center;
 }
 .post-3 {
   grid-row-start: 2;
@@ -174,8 +187,8 @@ a {
   grid-row-end: 4;
   grid-column-end: 2;
   box-shadow: 0 0 2px rgba(0,0,0,1);
-  background: url('images/cottage2.jpg');
-  background-size: contain;
+  background: url('images/cottage2.jpg') center center;
+  background-size: cover;
 }
 .post-4 {
   grid-row-start: 3;
@@ -183,8 +196,8 @@ a {
   grid-row-end: 5;
   grid-column-end: 3;
   box-shadow: 0 0 2px rgba(0,0,0,1);
-  background: url('images/cottage3.jpg');
-  background-size: contain;
+  background: url('images/cottage3.jpg') center center;
+  background-size: cover;
 }
 .post-5 {
   grid-row-start: 4;
@@ -192,14 +205,55 @@ a {
   grid-row-end: 6;
   grid-column-end: 2;
   box-shadow: 0 0 2px rgba(0,0,0,1);
-  background: url('images/cottage4.jpg');
-  background-size: contain;
+  background: url('images/cottage4.jpg') center center;
+  background-size: cover;
 }
 .post-6 {
   grid-row-start: 5;
   grid-column-start: 2;
   box-shadow: 0 0 2px rgba(0,0,0,1);
 }
+
+
+.p1 {
+	grid-row-start: 1;
+  }
+  .p2 {
+	grid-row-start: 2;
+	grid-row-end: 4;
+	background: url('images/cottage1.jpg') center center;
+	background-size: cover;
+	box-sizing: border-box;
+	box-shadow: 0 0 2px rgba(0,0,0,1);
+	transition: 0.5s;
+	background-position: center center;
+  }
+  .p3 {
+	grid-row-start: 4;
+	grid-row-end: 6;
+	box-shadow: 0 0 2px rgba(0,0,0,1);
+	background: url('images/cottage2.jpg') center center;
+	background-size: cover;
+  }
+  .p4 {
+	grid-row-start: 6;
+	grid-row-end: 8;
+	box-shadow: 0 0 2px rgba(0,0,0,1);
+	background: url('images/cottage3.jpg') center center;
+	background-size: cover;
+  }
+  .p5 {
+	grid-row-start: 8;
+	grid-row-end: 10;
+	box-shadow: 0 0 2px rgba(0,0,0,1);
+	background: url('images/cottage4.jpg') center center;
+	background-size: cover;
+  }
+  .p6 {
+	grid-row-start: 10;
+	box-shadow: 0 0 2px rgba(0,0,0,1);
+  }
+
 .test {
 	transition: 0.5s;
 	background-color: #FFFFFF;
@@ -221,10 +275,22 @@ a {
   grid-template-rows: repeat(3, 33%);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+.grid-base2 {
+  display: none;
+  grid-template-rows: repeat(3, 33%);
+  grid-template-columns: 100%;
+}
+@media screen and (max-width: 760px)	{
+	.grid-base {
+		display: none;
+	}
+	.grid-base2 {
+		display: grid;
+	}
+}
 .icons {
 	vertical-align: middle;
 	width: 40px;
-	margin-right: 15px;
 }
 
 #example .new {
@@ -270,11 +336,11 @@ li {
 	color: #D69D5B;
 	transition: 0.5s;
 }
-@media screen and (max-width: 1000px)	{
-	.menu{
+@media screen and (max-width: 1200px)	{
+	.menu {
 		display: none;
 	}
-	.menu2{
+	.menu2 {
 		display: grid;
 	}
 }

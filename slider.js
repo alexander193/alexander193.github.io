@@ -298,3 +298,18 @@ $(window).scroll(function() {
     $('.scrollup').fadeOut();
   }
 });
+$('.mbtn').click(function(){
+  element = $('.menu');
+  display = element.css('display');
+  if(display == 'none')
+      $('.menu').slideDown(400);
+  if(display == 'block')
+      $('.menu').slideUp(400);
+});
+/*
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+
+  alert("Вы используете мобильное устройство (телефон или планшет).")
+
+} else alert("Вы используете ПК.")
+*/
