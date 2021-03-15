@@ -1,5 +1,5 @@
 body {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	margin: 0px;
 }
 .wallpaper {
@@ -74,7 +74,7 @@ body {
 }
 .logo {
 	font-size: 26px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	vertical-align: bottom;
 	margin-left: -6px;
@@ -360,4 +360,37 @@ div.scrollup {
   }
   div.scrollup:hover {
 	background-color: #444444; /* цвет заднего фона при наведении */
+  }
+.menuToggle {
+	cursor: pointer;
+	color: white;
+	display: block;
+}
+  .ico  {
+	  width: 25px;
+	  height: 25px;
+	  cursor: pointer;
+  }
+  .hamburger {
+	  width: 40px;
+	  height: 4px;
+	  transform: translate(-50%, -50%);
+	  background: #D69D5B;
+	  transition: 0.5s;
+	  display: inline-block;
+  }
+  .hamburger::before,
+  .hamburger::after {
+	  content: "";
+	  width: 40px;
+	  height: 4px;
+	  position: absolute;
+	  background: #D69D5B;
+	  transition: 0.5s;
+  }
+  .hamburger::before {
+	  top: -16px;
+  }
+  .hamburger::after {
+	  top: 16px;
   }

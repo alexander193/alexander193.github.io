@@ -313,3 +313,10 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 
 } else alert("Вы используете ПК.")
 */
+
+$(document).ready(function() {
+  $('menuToggle').click(function() {
+    $(this).toggleClass('active');
+    $('.menuuu').slideToggle(300);
+  })
+})
