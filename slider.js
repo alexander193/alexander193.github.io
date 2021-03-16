@@ -309,6 +309,8 @@ $(document).ready(function() {
     alert("Вы зашли с мобильного устройства");
     $('.text').css('font-size') = "27px";
   }
+  else
+  alert("Вы зашли с ПК");
   animate();
   $(".menuToggle").click(function() {
     $(this).toggleClass("active");
