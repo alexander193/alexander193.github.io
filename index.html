@@ -1,41 +1,33 @@
 <html>
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>LuxCottages</title>
 	<link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slider.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body align="center">
 
-	<div class="menu dc">
-		<div class="dc">
-			<img src="images/ico.ico" alt="house" id="logo" style="margin-top: 10px; vertical-align: sub;">
+<body>
+	<div>
+		<div class="dc logotype" style="float: left;">
+			<img src="images/ico.ico" alt="house" id="logo">
 			<nobr class="logo gold">Lux</nobr>
 			<nobr class="logo">Cottages</nobr>
 		</div>
-		<div class="dc" style="text-align: right; margin-right: 70px;">
-			<ul>
-				<li><a href="" class="menu_ref gold bold">Главная</a></li>
+		<div class="wrapper">
+			<div class="menuToggle icon" style="margin-left: auto;">
+				<div class="hamburger"></div>
+			</div>
+			
+			<ul class="menu">
+				<li><a href="" class="menu_ref bold" style="color: #D69D5B;">Главная</a></li>
 				<li><a href="" class="menu_ref black bold">О нас</a></li>
 				<li><a href="" class="menu_ref black bold">Контакты</a></li>
 			</ul>
 		</div>
-	</div>
-
-	<div class="menu2 dc">
-		<div class="dc">
-			<img src="images/ico.ico" alt="house" id="logo" style="margin-top: 10px; vertical-align: sub;">
-			<nobr class="logo gold">Lux</nobr>
-			<nobr class="logo">Cottages</nobr>
-		</div>
-		
-		<ul class="menuuu" style="text-align: right;">
-			<li style="margin-right: 60px;"><a href="" class="menu_ref gold bold">Меню</a></li>
-		</ul>
 	</div>
 
 	<div class="slider" style="background-color: #EEEEEE;">
@@ -62,12 +54,7 @@
 		<a class="slider__control slider__control_left" href="#" role="button"></a>
 		<a class="slider__control slider__control_right" href="#" role="button"></a>
 	</div>
-	<!--
-		<div class="menuToggle ico">
-		<div class="hamburger">
-		</div>
-	</div>
--->
+
 	<div style="background-color: #FBFBFB;">
 		<table height="600px" width="100%">
 			<tr>
@@ -186,7 +173,7 @@
 		</tr>
 	</table>
 	<div style="background-color: #333333">
-		<div class="grid-base">
+		<div class="grid-base" style="justify-items: center;">
 			<div>
 				<img class="icons" src="images/vk.png" alt="vk" style="margin-right: 15px;">
 				<img class="icons" src="images/inst.png" alt="instagram" style="margin-right: 15px;">
@@ -203,7 +190,7 @@
 				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
 			</div>
 		</div>
-		<div class="grid-base2">
+		<div class="grid-base2" style="justify-items: center;">
 			<div>
 				<nobr class="basement_text dc" style="color: #333333;">1</nobr>
 				<img class="icons" src="images/vk.png" alt="vk" style="margin-right: 15px;">
@@ -221,12 +208,14 @@
 				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
 			</div>
 		</div>
-		<p class="basement_text dc">© LuxCottages, 2021</p>
+		<p class="basement_text dc" style="text-align: center;">© LuxCottages, 2021</p>
 	</div>
 	<div class="scrollup">
 		<img style="width: 100%; height: 100%;" src="images/up.png" alt="house">
-	  </div>
-	  <script src="slider.js"></script>
-	  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="slider.js"></script>
 </body>
+
 </html>

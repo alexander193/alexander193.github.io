@@ -1,3 +1,4 @@
+
 'use strict';
 var active = 1;
 var multiItemSlider = (function () {
@@ -273,23 +274,19 @@ function animate() {
   }
 }
 
-$(document).ready(function () {
-  animate();
-});
-
-$(function() {
+$(function () {
   // при нажатии на кнопку scrollup
-  $('.scrollup').click(function() {
+  $('.scrollup').click(function () {
     // переместиться в верхнюю часть страницы
     $("html, body").animate({
-      scrollTop:0
-    },1000);
+      scrollTop: 0
+    }, 1000);
   })
 })
 // при прокрутке окна (window)
-$(window).scroll(function() {
+$(window).scroll(function () {
   // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop()>200) {
+  if ($(this).scrollTop() > 200) {
     // то сделать кнопку scrollup видимой
     $('.scrollup').fadeIn();
   }
@@ -298,25 +295,23 @@ $(window).scroll(function() {
     $('.scrollup').fadeOut();
   }
 });
-$('.mbtn').click(function(){
+$('.mbtn').click(function () {
   element = $('.menu');
   display = element.css('display');
-  if(display == 'none')
-      $('.menu').slideDown(400);
-  if(display == 'block')
-      $('.menu').slideUp(400);
+  if (display == 'none')
+    $('.menu').slideDown(400);
+  if (display == 'block')
+    $('.menu').slideUp(400);
 });
-/*
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-
-  alert("Вы используете мобильное устройство (телефон или планшет).")
-
-} else alert("Вы используете ПК.")
-*/
 
 $(document).ready(function() {
-  $('menuToggle').click(function() {
-    $(this).toggleClass('active');
-    $('.menuuu').slideToggle(300);
-  })
-})
+  animate();
+  $(".menuToggle").click(function() {
+    $(this).toggleClass("active");
+    $('.menu').slideToggle(300, function(){
+      if($(this).css('display') === "none"){
+        $(this).removeAttr('style');
+      }
+    });
+  });
+});
