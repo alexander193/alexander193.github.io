@@ -307,6 +307,7 @@ $('.mbtn').click(function () {
 $(document).ready(function() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
    
+  alert("Вы зашли с мобилы");
     $('.text').css('font-size') = "217px";
   }
   else
