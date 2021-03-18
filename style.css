@@ -370,7 +370,7 @@ margin-left: 10vw;
 	padding-bottom: 20px;
 }
 
-@media( max-width: 1200px) {
+@media( max-width: 1300px) {
     .menuToggle {
         display: block;
     }
