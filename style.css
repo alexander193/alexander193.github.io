@@ -1,3 +1,34 @@
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: #fff;
+	z-index: 999999;
+  }
+  
+  .preloader__image {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 64px;
+	height: 64px;
+	margin-top: -32px;
+	margin-left: -32px;
+	background: url('images/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+  }
+  
+  .loaded_hiding .preloader {
+	transition: 0.3s opacity;
+	opacity: 0;
+  }
+  
+  .loaded .preloader {
+	display: none;
+  }
+
 body {
 	font-family: 'Oswald', sans-serif;
 	margin: 0px;
@@ -59,7 +90,7 @@ body {
 }
 .text {
 	color: black;
-	font-size: 18px;
+	font-size: 24px;
 }
 .gold {
 	color: #D69D5B;
@@ -314,17 +345,21 @@ div.scrollup {
 	color: #fff; /* цвет текста */
 	right: 20px; /* расстояние от правого края */
 	bottom: 20px; /* расстояние от нижнего края */
-	padding: 4px 10px; /* отступы до содержимого блока */
 	font-size: 20px; /* размер шрифта (иконки) */
 	border-radius: 4px;
 	cursor: pointer; /* форма курсора */
 	display: none; /* не отображать элемент */
 	text-align: center; /*выравнивание содержимого элемента по центру */
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
+	background: url('images/up.png') center center;
+	background-size: cover;
+	transition: 0.3s;
   }
   div.scrollup:hover {
-	background-color: #444444; /* цвет заднего фона при наведении */
+	background: url('images/hoverup.png') center center;
+	background-size: cover;
+	transition: 0.3s;
   }
 
   .menu {
