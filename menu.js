@@ -1,15 +1,3 @@
-
-$(document).ready(function(){
- $("a.photo").fancybox({
- transitionIn: 'elastic',
- transitionOut: 'elastic',
- speedIn: 500,
- speedOut: 500,
- hideOnOverlayClick: false,
- titlePosition: 'over'
- });
-});
-
 $(document).ready(function() {
   $(".menuToggle").click(function() {
     $(this).toggleClass("active");

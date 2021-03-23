@@ -481,10 +481,10 @@ margin-left: 10vw;
     top: 0;
     transform: rotate(135deg);
 }
-.gallery img{
+.gallery img {
 	margin:5px; /* внешние отступы картинок */
 	border:3px solid #fff; /* рамка картинок */
    }
-   a.photo:hover img{
+   a.photo:hover img {
 	border:3px solid #D69D5B; /* изменение цвета рамки при наведении на картинку */
    }
