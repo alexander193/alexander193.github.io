@@ -17,12 +17,16 @@
 	<script>
 		$(document).ready(function () {
 				$("a.photo").fancybox({
+					padding: 0,
 					transitionIn: 'elastic',
 					transitionOut: 'elastic',
-					speedIn: 500,
-					speedOut: 500,
+					speedIn: 300,
+					speedOut: 300,
 					hideOnOverlayClick: false,
-					titlePosition: 'over'
+					titlePosition: 'over',
+					cyclic: true,
+					enableEscapeButton: true,
+					titleShow: false
 				});
 			});
 	</script>
@@ -50,63 +54,67 @@
 		</div>
 	</div>
 
-	<div class="gallery">
-		<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+	<div style="background-color: #DBDBDB;">
+		<table height="600px" width="100%">
+			<tr>
+				<td style="text-align: center;">
+					<div style="margin-bottom: 20px;">
+						<nobr class="text bold gold">Вы можете посмотреть фоточки (просто кликните на любую)</nobr>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="gallery gg" style="margin: 10px;">
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
 				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
-		<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
 				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
-		<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
-				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>
-		<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
 				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
-	</div>
-
-	<div style="background-color: #DBDBDB;">
-		<table height="600px" width="100%">
-			<tr>
-				<td style="text-align: center;">
-					<div style="margin-bottom: 20px;">
-						<nobr class="text bold gold">Тут будут фоточки</nobr>
-					</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-
-	<div style="background-color: #EFEFEF;">
-		<table height="600px" width="100%">
-			<tr>
-				<td style="text-align: center;">
-					<div style="margin-bottom: 20px;">
-						<nobr class="text bold">Фоточки</nobr>
-					</div>
-					<nobr class="heading bold">И тут </nobr>
-					<nobr class="heading bold">тоже </nobr>
-					<nobr class="gold heading bold">фоточки</nobr>
-					<p class="inner">
-						И тут
-					</p>
-				</td>
-			</tr>
-		</table>
-	</div>
-
-	<div style="background-color: #DBDBDB;">
-		<table height="600px" width="100%">
-			<tr>
-				<td style="text-align: center;">
-					<div style="margin-bottom: 20px;">
-						<nobr class="text bold">И тут</nobr>
-					</div>
-					<nobr class="heading bold">очень </nobr>
-					<nobr class="heading bold">много </nobr>
-					<nobr class="gold heading bold">фоток</nobr>
-					<p class="inner">
-						И тут
-					</p>
-				</td>
-			</tr>
-		</table>
+		</div>
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
+		</div>
 	</div>
 
 	<div style="background-color: #333333">
