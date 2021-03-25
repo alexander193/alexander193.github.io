@@ -58,8 +58,8 @@
 	<script type="text/javascript">
 		ymaps.ready(function () {
 				var myMap = new ymaps.Map('map', {
-					center: [55.751574, 37.573856],
-					zoom: 9
+					center: [57.243246, 37.821195],
+					zoom: 14
 				}, {
 					searchControlProvider: 'yandex#search'
 				}),
@@ -69,7 +69,7 @@
 						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
 					),
 
-					myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+					myPlacemark = new ymaps.Placemark([57.253246, 37.811195], {
 						hintContent: 'Собственный значок метки',
 						balloonContent: 'Это красивая метка'
 					}, {
@@ -77,38 +77,16 @@
 						// Необходимо указать данный тип макета.
 						iconLayout: 'default#image',
 						// Своё изображение иконки метки.
-						iconImageHref: '../images/myIcon.gif',
+						iconImageHref: '../images/point.png',
 						// Размеры метки.
-						iconImageSize: [30, 42],
+						iconImageSize: [60, 60],
 						// Смещение левого верхнего угла иконки относительно
 						// её "ножки" (точки привязки).
-						iconImageOffset: [-5, -38]
-					}),
-
-					myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-						hintContent: 'Собственный значок метки с контентом',
-						balloonContent: 'А эта — новогодняя',
-						iconContent: '12'
-					}, {
-						// Опции.
-						// Необходимо указать данный тип макета.
-						iconLayout: 'default#imageWithContent',
-						// Своё изображение иконки метки.
-						iconImageHref: '../images/ball.png',
-						// Размеры метки.
-						iconImageSize: [48, 48],
-						// Смещение левого верхнего угла иконки относительно
-						// её "ножки" (точки привязки).
-						iconImageOffset: [-24, -24],
-						// Смещение слоя с содержимым относительно слоя с картинкой.
-						iconContentOffset: [15, 15],
-						// Макет содержимого.
-						iconContentLayout: MyIconContentLayout
+						iconImageOffset: [0, 0]
 					});
 
 				myMap.geoObjects
-					.add(myPlacemark)
-					.add(myPlacemarkWithContent);
+					.add(myPlacemark);
 			});
 	</script>
 	<div id="map" style="height:500px"></div>
