@@ -3,7 +3,7 @@ const panoImage = document.querySelector('.pano-image');
 const housePano = '../images/house.jpeg';
 const panorama = new PANOLENS.ImagePanorama(housePano);
 
-infospot = new PANOLENS.Infospot();
+infospot = new PANOLENS.Infospot(600);
 infospot.position.set(-111.58, 201.56, -4986.23);
 infospot.addHoverText('Зацените');
 
