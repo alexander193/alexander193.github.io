@@ -3,7 +3,7 @@ const panoImage = document.querySelector('.pano-image');
 const housePano = '../images/house.jpeg';
 const panorama = new PANOLENS.ImagePanorama(housePano);
 
-infospot1 = new PANOLENS.Infospot(1350, path, false);
+infospot1 = new PANOLENS.Infospot(350, path, false);
 infospot1.position.set(-2787.53, -794.60, 4067.16);
 infospot1.addHoverText('Mountain Tip');
 
