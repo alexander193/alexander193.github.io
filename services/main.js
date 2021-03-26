@@ -3,6 +3,10 @@ const panoImage = document.querySelector('.pano-image');
 const housePano = '../images/house.jpeg';
 const panorama = new PANOLENS.ImagePanorama(housePano);
 
+infospot = new PANOLENS.Infospot();
+infospot.position.set(-111.58, 201.56, -4986.23);
+infospot.addHoverText('Зацените');
+
 //infospot1 = new PANOLENS.Infospot(350, path, false);
 //infospot1.position.set(-2787.53, -794.60, 4067.16);
 
@@ -10,6 +14,7 @@ const viewer = new PANOLENS.Viewer({
     container: panoImage,
     output: 'console'
 });
+panorama.add( infospot );
 viewer.add(panorama);
 /*
 
