@@ -9,6 +9,15 @@ infospot = new PANOLENS.Infospot(500, PANOLENS.DataImage.Info);
 infospot.position.set( 0, 0, -5000 );
 infospot.addEventListener( 'click', function(){
   viewer.setPanorama( panorama2 );
+  infospot2.position.set( 0, 0, -5000 );
+  panorama2.add( infospot2 );
+} );
+
+infospot2 = new PANOLENS.Infospot(500, PANOLENS.DataImage.Info);
+infospot2.position.set( 0, 0, -4000 );
+infospot2.addEventListener( 'click', function(){
+  viewer.setPanorama( panorama );``
+  panorama.add( infospot );
 } );
 
 panorama.add( infospot );
