@@ -498,5 +498,5 @@ margin-left: 10vw;
    .pano-image {
    display: block;
 	width: 100%;
-	height: 1000px;
+	height: calc(100% - 60px);
    }

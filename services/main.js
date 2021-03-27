@@ -22,7 +22,7 @@ infospot2.addEventListener( 'click', function(){
 panorama.add( infospot );
 viewer = new PANOLENS.Viewer( { 
     container: container,
-    cameraFov: 60,
+    cameraFov: 75,
     output: 'console'
  } );
 viewer.add(panorama, panorama2);
