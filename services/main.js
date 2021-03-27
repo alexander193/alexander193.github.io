@@ -1,12 +1,12 @@
 var panorama, panorama2, viewer, container, infospot;
 
-container = document.querySelector( '#container' );
+container = document.querySelector( '.pano-image' );
 
 panorama = new PANOLENS.ImagePanorama( '../images/house.jpeg' );
 panorama2 = new PANOLENS.ImagePanorama( '../images/house2.jpeg' );
 
-infospot = new PANOLENS.Infospot( 500, PANOLENS.DataImage.Info );
-infospot.position.set( -100, -500, -5000 );
+infospot = new PANOLENS.Infospot(500);
+infospot.position.set( 0, 0, -5000 );
 infospot.addHoverText( "The Story" );
 infospot.addEventListener( 'click', function(){
   viewer.setPanorama( panorama2 );
