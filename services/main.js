@@ -1,26 +1,52 @@
+var panorama, panorama2, viewer, container, infospot;
 
+container = document.querySelector( '#container' );
+
+panorama = new PANOLENS.ImagePanorama( '../images/house.jpeg' );
+panorama2 = new PANOLENS.ImagePanorama( '../images/house2.jpeg' );
+
+infospot = new PANOLENS.Infospot( 500, PANOLENS.DataImage.Info );
+infospot.position.set( -100, -500, -5000 );
+infospot.addHoverText( "The Story" );
+infospot.addEventListener( 'click', function(){
+  viewer.setPanorama( panorama2 );
+} );
+
+panorama.add( infospot );
+
+viewer = new PANOLENS.Viewer( { container: container } );
+viewer.add( panorama, panorama2 );
+
+viewer.addUpdateCallback(function(){
+  
+});
+
+
+
+/*
 const panoImage = document.querySelector('.pano-image');
-const housePano = '../images/house.jpeg';
-const panorama = new PANOLENS.ImagePanorama(housePano);
-
-const housePano2 = '../images/house2.jpeg';
-const panorama2 = new PANOLENS.ImagePanorama(housePano2);
+const panorama = new PANOLENS.ImagePanorama('../images/house.jpeg');
+const panorama2 = new PANOLENS.ImagePanorama('../images/house2.jpeg');
 
 infospot = new PANOLENS.Infospot(600);
 infospot.position.set(-111.58, 201.56, -4986.23);
 infospot.addHoverText('Зацените');
-infospot.addEventListener( 'click', function(){ viewer.setPanorama( panorama2 ); });
+infospot.addEventListener( 'click', function(){
+    viewer.setPanorama( panorama2 );
+  } );
 //infospot.onClick(function(){ viewer.setPanorama(panorama2); });
 
 //infospot1 = new PANOLENS.Infospot(350, path, false);
 //infospot1.position.set(-2787.53, -794.60, 4067.16);
 
-const viewer = new PANOLENS.Viewer({
-    container: panoImage,
-    output: 'console'
-});
 panorama.add(infospot);
-viewer.add(panorama);
+
+viewer = new PANOLENS.Viewer( { container: container } );
+viewer.add( panorama, panorama2 );
+
+viewer.addUpdateCallback(function(){
+  
+});
 
 /*
 var infospot, infospot2, panorama, viewer;
