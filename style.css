@@ -109,7 +109,8 @@ p {
 	vertical-align: middle;
 	margin-right: 6px;
 	margin-left: 20px;
-	width: 30px;
+	width: 350px;
+	padding-top: 3px;
 }
 .romb {
 	width: 12px;
