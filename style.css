@@ -130,7 +130,7 @@ p {
 }
 .inner {
 	color: gray;
-	font-size: 18px;
+	font-size: 20px;
 }
 .basement_text {
 	margin-bottom: 0px;
@@ -309,6 +309,33 @@ a {
 	transition: opacity .8s ease-in-out;
 	opacity: 1;
 }
+
+#example3 .new {
+	opacity: 0;
+}
+
+#example3 .div_opacity {
+	-webkit-transition: opacity .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out;
+	-ms-transition: opacity .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out;
+	transition: opacity .8s ease-in-out;
+	opacity: 1;
+}
+
+#example4 .new {
+	opacity: 0;
+}
+
+#example4 .div_opacity {
+	-webkit-transition: opacity .8s ease-in-out;
+	-moz-transition: opacity .8s ease-in-out;
+	-ms-transition: opacity .8s ease-in-out;
+	-o-transition: opacity .8s ease-in-out;
+	transition: opacity .8s ease-in-out;
+	opacity: 1;
+}
+
 #example2 .new {
 	opacity: 0;
 }
@@ -406,7 +433,7 @@ margin-left: 10vw;
 	padding-bottom: 20px;
 }
 
-@media( max-width: 1300px) {
+@media( max-width: 1465px) {
     .menuToggle {
         display: block;
     }
