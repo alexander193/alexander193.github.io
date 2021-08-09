@@ -129,19 +129,8 @@ var multiItemSlider = (function () {
         }
         _transform += _step;
       }
-      if (active == 1)
-        active = 2;
-      else
-        active = 1;
       _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
-      if (active == 1) {
-        $('#example').hide();
-        $('#example3').hide();
-        $('#example4').hide();
-      }
-      else {
-        $('#example2').hide();
-      }
+      
       window.setTimeout(function () {
         animate();
       }, 200);
@@ -273,10 +262,7 @@ function animate() {
     $('#example4').animate_Text();
     $('#example3').show();
     $('#example3').animate_Text();
-  }
-  else {
-    $('#example2').show();
-    $('#example2').animate_Text();
+    active = 0;
   }
 }
 

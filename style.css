@@ -145,7 +145,7 @@ a {
 }
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(5, 180px);
+  grid-template-rows: repeat(3, 200px);
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 30px;
   padding: 20px;
@@ -154,12 +154,20 @@ a {
 }
 .grid-container2 {
   display: none;
-  grid-template-rows: repeat(10, 180px);
+  grid-template-rows: repeat(6, 180px);
   grid-template-columns: 100%;
   grid-gap: 30px;
   padding: 20px;
   max-width: 800px;
   box-sizing: border-box;
+}
+.grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1000px)	{
 	.grid-container {
@@ -194,26 +202,8 @@ a {
   background: url('images/cottage2.jpg') center center;
   background-size: cover;
 }
-.post-4 {
-  grid-row-start: 3;
-  grid-column-start: 2;
-  grid-row-end: 5;
-  grid-column-end: 3;
-  box-shadow: 0 0 2px rgba(0,0,0,1);
-  background: url('images/cottage3.jpg') center center;
-  background-size: cover;
-}
-.post-5 {
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 2;
-  box-shadow: 0 0 2px rgba(0,0,0,1);
-  background: url('images/cottage4.jpg') center center;
-  background-size: cover;
-}
 .post-6 {
-  grid-row-start: 5;
+  grid-row-start: 3;
   grid-column-start: 2;
   box-shadow: 0 0 2px rgba(0,0,0,1);
 }
@@ -239,22 +229,8 @@ a {
 	background: url('images/cottage2.jpg') center center;
 	background-size: cover;
   }
-  .p4 {
-	grid-row-start: 6;
-	grid-row-end: 8;
-	box-shadow: 0 0 2px rgba(0,0,0,1);
-	background: url('images/cottage3.jpg') center center;
-	background-size: cover;
-  }
-  .p5 {
-	grid-row-start: 8;
-	grid-row-end: 10;
-	box-shadow: 0 0 2px rgba(0,0,0,1);
-	background: url('images/cottage4.jpg') center center;
-	background-size: cover;
-  }
   .p6 {
-	grid-row-start: 10;
+	grid-row-start: 6;
 	box-shadow: 0 0 2px rgba(0,0,0,1);
   }
 
@@ -527,4 +503,9 @@ margin-left: 10vw;
    display: block;
 	width: 100%;
 	height: calc(100vh - 100px);
+   }
+   .inner2 {
+	   color: black;
+	   font-size: 15pt;
+
    }
