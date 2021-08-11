@@ -16,8 +16,8 @@ $(function () {
     $("html, body").animate({
       scrollTop: 0
     }, 500);
-  })
-})
+  });
+});
 // при прокрутке окна (window)
 $(window).scroll(function () {
   // если пользователь прокрутил страницу более чем на 200px

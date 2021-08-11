@@ -9,12 +9,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slider.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="slider.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  const slider = new ChiefSlider('.slider', {
+			loop: true,
+			autoplay: true,
+			interval: 5000
+		  });
+		});
+	  </script>
 </head>
 
 <body>
+	<!--
 	<div class="preloader">
 		<div class="preloader__image"></div>
 	</div>
+	-->
 	<div>
 		<div class="dc logotype" style="float: left;">
 			<img src="images/simple_logo.png" alt="house" id="logo">
@@ -34,6 +47,7 @@
 		</div>
 	</div>
 
+	<!--
 	<div class="slider" style="background-color: #EEEEEE;">
 		<div class="slider__wrapper">
 			<div class="slider__item">
@@ -62,12 +76,50 @@
 		<a class="slider__control slider__control_left" href="#" role="button"></a>
 		<a class="slider__control slider__control_right" href="#" role="button"></a>
 	</div>
+-->
+
+
+
+
+
+	<div class="container">
+
+		<div class="slider">
+		  <div class="slider__container">
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+				  <!-- Контент 1 слайда -->
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 2 слайда -->
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 3 слайда -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <a href="#" class="slider__control" data-slide="prev"></a>
+		  <a href="#" class="slider__control" data-slide="next"></a>
+		</div>
+	
+	  </div>
+
+
+
+
+
+
+
+
+
 
 	<div class="grid-container3" style="background-color: #FFFFFF;">
 		<div style="text-align: center;">
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/sun.png" alt="sun&coast" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/sun.png" alt="sun&coast" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -77,9 +129,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/garden.png" alt="garden" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/garden.png" alt="garden" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -89,9 +141,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/swings.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/swings.png" alt="swings" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -101,9 +153,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/house.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/house.png" alt="house" style="width: 110px;">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -113,9 +165,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/car.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/car.png" alt="car" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -125,9 +177,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/big_house.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/big_house.png" alt="big_house" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -137,9 +189,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/bicycle.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/bicycle.png" alt="bicycle" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -149,9 +201,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/wifi.png" alt="swings" style="width: 90px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/wifi.png" alt="wifi" class="small_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -312,7 +364,6 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="slider.js"></script>
 </body>
 
 </html>

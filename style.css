@@ -509,3 +509,27 @@ margin-left: 10vw;
 	   font-size: 15pt;
 
    }
+
+.td_icons {
+	width: 122px;
+	text-align: center;
+	height: 122px;
+}
+
+.small_img {
+	width: 90px;
+}
+
+.middle_img {
+	width: 100px;
+}
+
+.large_img {
+	width: 120px;
+}
+
+.icon_table {
+	border: 0px solid black;
+	width: 100%;
+	height: 100%;
+}
