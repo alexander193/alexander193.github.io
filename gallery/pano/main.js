@@ -21,15 +21,15 @@ function onProgress ( event ) {
 
 container = document.querySelector( '.pano-image' );
 
-panorama = new PANOLENS.ImagePanorama( '../images/house.jpeg' );
+panorama = new PANOLENS.ImagePanorama( '../../images/house.jpeg' );
 panorama.addEventListener( 'progress', onProgress );
 panorama.addEventListener( 'enter', onEnter );
 
-panorama2 = new PANOLENS.ImagePanorama( '../images/house2.jpeg' );
+panorama2 = new PANOLENS.ImagePanorama( '../../images/house2.jpeg' );
 panorama2.addEventListener( 'progress', onProgress );
 panorama2.addEventListener( 'enter', onEnter );
 
-infospot = new PANOLENS.Infospot(1000, '../images/strelka.png');
+infospot = new PANOLENS.Infospot(1000, '../../images/strelka.png');
 infospot.position.set(3376.66, -2773.43, -2420.08);
 infospot.addEventListener( 'click', function(){
   viewer.setPanorama( panorama2 );
@@ -37,7 +37,7 @@ infospot.addEventListener( 'click', function(){
   panorama2.add( infospot2 );
 } );
 
-infospot2 = new PANOLENS.Infospot(1000, '../images/strelka2.png');
+infospot2 = new PANOLENS.Infospot(1000, '../../images/strelka2.png');
 infospot2.addEventListener( 'click', function(){
   viewer.setPanorama( panorama );
   panorama.add( infospot );
