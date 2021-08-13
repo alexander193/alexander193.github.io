@@ -499,6 +499,10 @@ margin-left: 10vw;
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
    }
+   .pano-image {
+   height: 100%;
+   width: 100%;
+   }
    .inner2 {
 	   color: black;
 	   font-size: 15pt;
