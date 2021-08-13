@@ -47,6 +47,7 @@ panorama.add( infospot );
 viewer = new PANOLENS.Viewer( { 
     container: container,
     cameraFov: 75,
+    autoHideInfospot: true,
     output: 'console'
  } );
 viewer.add(panorama, panorama2);
