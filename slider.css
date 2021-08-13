@@ -12,6 +12,7 @@
 
   .slider__items {
 	counter-reset: slide;
+	z-index: 0;
   }
 
   .slider__item {
