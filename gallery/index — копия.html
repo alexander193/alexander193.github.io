@@ -1,0 +1,232 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Галерея</title>
+	<link rel="shortcut icon" href="../images/ico.ico" type="image/x-icon">
+	<script src="jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+ 	<link rel="stylesheet" href="../style.css" />
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="photoswipe.css"/>
+	
+	<script src="../menu.js"></script>
+	
+<script type="module">
+	// Include Lightbox 
+	import PhotoSwipeLightbox from '/v5/photoswipe/photoswipe-lightbox.esm.js';
+	
+	const lightbox = new PhotoSwipeLightbox({
+	  // may select multiple "galleries"
+	  gallerySelector: '#gallery--simple',
+	
+	  // Elements within gallerySelector (slides)
+	  childSelector: 'a',
+	
+	  // Include PhotoSwipe Core
+	  // and use absolute path (that starts with http(s)://)
+	  pswpModule: 'photoswipe.esm.js'
+	});
+	lightbox.init();
+	</script>
+
+</head>
+
+<body>
+	<div>
+		<div class="dc logotype" style="float: left;">
+			<img src="../images/simple_logo.png" alt="house" id="logo">
+		</div>
+		<div class="wrapper">
+			<div class="menuToggle icon" style="margin-left: auto;">
+				<div class="hamburger"></div>
+			</div>
+
+			<ul class="menu">
+				<li><a href="../index.html" class="menu_ref black bold">Главная</a></li>
+				<li><a href="../price/index.html" class="menu_ref black bold">Проживание и цены</a></li>
+				<li><a href="../services/index.html" class="menu_ref black bold">Услуги</a></li>
+				<li><a href="" class="menu_ref bold" style="color: #D69D5B;">Фотогалерея</a></li>
+				<li><a href="../contacts/index.html" class="menu_ref black bold">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="background-color: #DBDBDB;">
+		<table height="200px" width="100%">
+			<tr>
+				<td style="text-align: center;">
+					<a class="test text" style="background-color: #D69D5B; border-color: #D69D5B;" href="pano/index.html">Посмотреть панораму</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="pswp-gallery pswp-gallery--single-column" id="gallery--simple">
+		<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+		  data-pswp-width="1669" 
+		  data-pswp-height="2500" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+		</a>
+	  
+		<!-- cropped thumbnail -->
+		<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+		  data-pswp-width="1875" 
+		  data-pswp-height="2500" 
+		  data-cropped="true" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+		  Cropped
+		</a>
+		
+		<!-- data-pswp-src with custom URL in href -->
+		<a href="https://unsplash.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1666" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+		</a>
+	  
+		<!-- Without thumbnail -->
+		<a href="http://example.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1668" 
+		  target="_blank">
+		  No thumbnail
+		</a>
+	  
+		<!-- wrapped with any element -->
+		<div>
+		  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+			data-pswp-width="2500" 
+			data-pswp-height="1667" 
+			target="_blank">
+			<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+		  </a>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="gallery gg" style="margin: 10px;">
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="300" height="200" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage3.jpg" title="Картинка 3"><img
+				src="../images/cottage3.jpg" width="300" height="200" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage4.jpg" title="Картинка 4"><img
+				src="../images/cottage4.jpg" width="300" height="200" alt="" /></a>
+		</div>
+	</div>
+
+	<div style="background-color: #333333">
+		<div class="grid-base" style="justify-items: center;">
+			<div>
+				<img class="icons" src="../images/vk.png" alt="vk" style="margin-right: 15px;">
+				<img class="icons" src="../images/inst.png" alt="instagram" style="margin-right: 15px;">
+				<img class="icons" src="../images/whats.png" alt="whatsapp" style="margin-right: 15px;">
+				<img class="icons" src="../images/tele.png" alt="tele">
+				<nobr class="basement_text dc" style="color: #333333;">1</nobr>
+			</div>
+			<div>
+				<img class="icons" src="../images/phone.png" alt="house">
+				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
+			</div>
+			<div>
+				<img class="icons" src="../images/mail.png" alt="house">
+				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
+			</div>
+		</div>
+		<div class="grid-base2" style="justify-items: center;">
+			<div>
+				<nobr class="basement_text dc" style="color: #333333;">1</nobr>
+				<img class="icons" src="../images/vk.png" alt="vk" style="margin-right: 15px;">
+				<img class="icons" src="../images/inst.png" alt="instagram" style="margin-right: 15px;">
+				<img class="icons" src="../images/whats.png" alt="whatsapp" style="margin-right: 15px;">
+				<img class="icons" src="../images/tele.png" alt="tele">
+				<nobr class="basement_text dc" style="color: #333333;">1</nobr>
+			</div>
+			<div>
+				<img class="icons" src="../images/phone.png" alt="house">
+				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
+			</div>
+			<div>
+				<img class="icons" src="../images/mail.png" alt="house">
+				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
+			</div>
+		</div>
+		<div style="text-align: center; margin-top: 10px;"><img src="../images/logo.png" alt="house" style="width: 300px; text-align: center;"></div>
+	</div>
+	<div class="scrollup">
+	</div>
+</body>
+
+</html>

@@ -532,3 +532,16 @@ margin-left: 10vw;
 	width: 100%;
 	height: 100%;
 }
+
+.goback {
+	position: absolute;
+	margin-left: 1vw;
+	color: #D69D5B;
+	font-family: 'Oswald', sans-serif;
+	font: bold;
+	font-size: 22px;
+}
+
+.goback:hover {
+	color: #E6AD6B;
+}
