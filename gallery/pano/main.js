@@ -1,5 +1,6 @@
-var panorama, panorama2, viewer, container, infospot, progress, progressElement;
+var panorama, panorama2, viewer, container, infospot, progress, progressElement, table_prog;
 
+table_prog = document.getElementById( 'table_prog' );
 progressElement = document.getElementById( 'progress' );
 
 function onEnter ( event ) {
@@ -16,6 +17,7 @@ function onProgress ( event ) {
   //progressElement.style.width = progress + '%';
   if ( progress === 100 ) {
     progressElement.classList.add( 'finish' );
+    table_prog.style.display = 'none';
   }
 
 }
