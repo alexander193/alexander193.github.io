@@ -12,7 +12,7 @@ function onEnter ( event ) {
 function onProgress ( event ) {
 
   progress = event.progress.loaded / event.progress.total * 100;
-  document.getElementById('progressElement').innerHTML = progress;
+  progressElement.innerHTML = progress;
   //progressElement.style.width = progress + '%';
   if ( progress === 100 ) {
     progressElement.classList.add( 'finish' );
