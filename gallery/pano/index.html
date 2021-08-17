@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Услуги</title>
+	<link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+
+
+	<style>
+		 html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+      }
+	  
+		#progress {
+		  width: 0;
+		  height: 5px;
+		  position: fixed;
+		  top: 0;
+		  background: #fff;
+		  -webkit-transition: opacity 0.5s ease;
+		  transition: opacity 0.5s ease;
+		}
+  
+		#progress.finish {
+		  opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="progress"></div>
+	
+	</div>
+
+	<div class="pano-image">
+		<a href="../index.html" class="goback">
+			Назад
+		</a>
+	</div>
+	
+	<script src="three.min.js"></script>
+	<script src="panolens.min.js"></script>
+	<script src="infospot.js" type="module"></script>
+	<script src="dat.gui.min.js" type="module"></script>
+	<script src="material.min.js" type="module"></script>
+	<script src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../../menu.js"></script>
+</body>
+
+</html>

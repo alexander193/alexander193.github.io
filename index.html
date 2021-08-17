@@ -9,12 +9,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="slider.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="slider.js"></script>
+	<script src="menu.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  const slider = new ChiefSlider('.slider', {
+			loop: true,
+			autoplay: true,
+			interval: 5000
+		  });
+		});
+	  </script>
 </head>
 
 <body>
+	
 	<div class="preloader">
 		<div class="preloader__image"></div>
 	</div>
+	
 	<div>
 		<div class="dc logotype" style="float: left;">
 			<img src="images/simple_logo.png" alt="house" id="logo">
@@ -34,6 +49,7 @@
 		</div>
 	</div>
 
+	<!--
 	<div class="slider" style="background-color: #EEEEEE;">
 		<div class="slider__wrapper">
 			<div class="slider__item">
@@ -62,12 +78,52 @@
 		<a class="slider__control slider__control_left" href="#" role="button"></a>
 		<a class="slider__control slider__control_right" href="#" role="button"></a>
 	</div>
+-->
 
-	<div class="grid-container3" style="background-color: #FFFFFF;">
+
+
+
+
+	<div class="container">
+
+		<div class="slider">
+			<div class="slider__container">
+				<p id="example" style="position: absolute; top: 5vw; z-index: 100; display: none; font-size: 6vw; color: white; margin: 0px; text-shadow: 2px 1px 2px black, 0 0 2px; height: 7vw; padding-left: 12vw;">
+					Гостевые дома у реки
+				</p>
+				<p id="example3" style="position: absolute; top: 13vw; z-index: 100; display: none; font-size: 4.5vw; color: white; margin: 0px; text-shadow: 2px 1px 2px black, 0 0 2px; height: 7vw; padding-left: 12vw;">
+					Уют, тишина и отличный вид
+				</p>
+				<p id="example4" style="position: absolute; top: 21vw; z-index: 100; display: none; font-size: 2.5vw; color: white; margin: 0px; text-shadow: 2px 1px 2px black, 0 0 2px; height: 7vw; padding-left: 12vw; margin-top: -1vw;">
+					Отдохни в новых домах на первой линии реки Волга
+				</p>
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+					
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 2 слайда -->
+				</div>
+				<div class="slider__item">
+				  <!-- Контент 3 слайда -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <a href="#" class="slider__control" data-slide="prev"></a>
+		  <a href="#" class="slider__control" data-slide="next"></a>
+		</div>
+	
+	  </div>
+
+
+
+	<div class="grid-container3" style="background-color: #FFFFFF; padding-top: 60px; padding-bottom: 60px;">
 		<div style="text-align: center;">
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/sun.png" alt="sun&coast" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/sun.png" alt="sun&coast" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -77,9 +133,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/garden.png" alt="garden" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/garden.png" alt="garden" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -89,9 +145,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/swings.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/swings.png" alt="swings" class="middle_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -101,9 +157,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/house.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/house.png" alt="house" style="width: 110px;">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -113,9 +169,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/car.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/car.png" alt="car" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -125,9 +181,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/big_house.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/big_house.png" alt="big_house" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -137,9 +193,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/bicycle.png" alt="swings" style="width: 120px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/bicycle.png" alt="bicycle" class="large_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -149,9 +205,9 @@
 			</table>
 		</div>
 		<div>
-			<table style="border: 0px solid black; width: 100%; height: 100%;">
-				<td style="width: 122px; text-align: center;">
-					<img src="images/wifi.png" alt="swings" style="width: 90px;">
+			<table class="icon_table">
+				<td class="td_icons">
+					<img src="images/wifi.png" alt="wifi" class="small_img">
 				</td>
 				<td style="text-align: center;">
 					<p class="inner2">
@@ -163,7 +219,7 @@
 	</div>
 
 	<div style="background-color: #EFEFEF;">
-		<table height="600px" width="100%">
+		<table width="100%" style="padding-top: 60px; padding-bottom: 60px;">
 			<tr>
 				<td style="text-align: center;">
 					
@@ -204,13 +260,13 @@
 		</table>
 	</div>
 -->
-	<table align="center" style="text-align: center;">
+	<table align="center" style="text-align: center; padding-top: 60px; padding-bottom: 60px;">
 		<tr>
 			<td>
 				<div class="grid-container">
 					<div class="post-1" style="background-color: white;">
-						<p class="heading gold" style="text-align: left;">Наши дома</p>
-						<p class="black text" style="text-align: left;">Мы предлагаем вам 2 коттеджа. У каждого дома есть благоустроенная территория (400м²), где можно разместить шезлонг, поиграть с детьми на собственной детской площадке, съесть собранные в лесу ягоды, сделать барбекю или встретить закат на просторной веранде.</p>
+						<p class="heading gold" style="text-align: left; margin-top: 10px; margin-bottom: 10px;">Наши дома</p>
+						<p class="black text" style="text-align: left; margin-top: 0px; margin-bottom: 0px; font-size: 22px;">Мы предлагаем вам 2 коттеджа. У каждого дома есть благоустроенная территория (400м²), где можно разместить шезлонг, поиграть с детьми на собственной детской площадке, съесть собранные в лесу ягоды, сделать барбекю или встретить закат на просторной веранде.</p>
 					</div>
 					<div class="post-2">
 						<p class="heading black"></p>
@@ -240,8 +296,8 @@
 
 				<div class="grid-container2">
 					<div class="p1" style="background-color: white;">
-						<p class="heading gold" style="text-align: left; padding-bottom: -20px;">Наши дома</p>
-						<p class="black text" style="text-align: left;">Мы предлагаем вам 2 коттеджа. У каждого дома есть благоустроенная территория (4 сотки), где можно разместить шезлонг, поиграть с детьми на собственной детской площадке, съесть собранные в лесу ягоды, сделать барбекю или встретить закат на просторной веранде.</p>
+						<p class="heading gold" style="text-align: left; margin-top: 0px; margin-bottom: 6px;">Наши дома</p>
+						<p class="black text" style="text-align: left; margin-top: 0px; margin-bottom: 0px;">Мы предлагаем вам 2 коттеджа. У каждого дома есть благоустроенная территория (4 сотки), где можно разместить шезлонг, поиграть с детьми на собственной детской площадке, съесть собранные в лесу ягоды, сделать барбекю или встретить закат на просторной веранде.</p>
 					</div>
 					<div class="p2">
 						<p class="heading black"></p>
@@ -261,7 +317,7 @@
 							</tr>
 							<tr height="80px">
 								<td align="center">
-									<a class="test text" href="">Посмотреть галерею</a>
+									<a class="test text" href="gallery/index.html">Посмотреть галерею</a>
 								</td>
 							</tr>
 						</table>
@@ -270,7 +326,7 @@
 			</td>
 		</tr>
 	</table>
-	<div style="background-color: #333333">
+	<div style="background-color: #333333; padding-bottom: 20px; padding-top: 20px;">
 		<div class="grid-base" style="justify-items: center;">
 			<div>
 				<img class="icons" src="images/vk.png" alt="vk" style="margin-right: 15px;">
@@ -281,7 +337,7 @@
 			</div>
 			<div>
 				<img class="icons" src="images/phone.png" alt="house">
-				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
+				<a href="tel:88003012391" class="basement_text dc white">8(800)301-23-91</a>
 			</div>
 			<div>
 				<img class="icons" src="images/mail.png" alt="house">
@@ -298,21 +354,20 @@
 				<nobr class="basement_text dc" style="color: #333333;">1</nobr>
 			</div>
 			<div>
-				<img class="icons" src="images/phone.png" alt="house">
-				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
+				<img class="icons" src="images/phone.png" alt="">
+				<a href="tel:88003012391" class="basement_text dc white">8(800)301-23-91</a>
 			</div>
 			<div>
-				<img class="icons" src="images/mail.png" alt="house">
+				<img class="icons" src="images/mail.png" alt="">
 				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
 			</div>
 		</div>
-		<div style="text-align: center; margin-top: 10px;"><img src="/images/logo.png" alt="house" style="width: 300px; text-align: center;"></div>
+		<div style="text-align: center; margin-top: 10px;">
+			<img src="images/logo.png" alt="" style="width: 300px;">
+		</div>
 	</div>
 	<div class="scrollup">
 	</div>
-
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="slider.js"></script>
 </body>
 
 </html>

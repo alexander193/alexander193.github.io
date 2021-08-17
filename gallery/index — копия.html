@@ -12,24 +12,29 @@
  	<link rel="stylesheet" href="../style.css" />
 	 <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="photoswipe.css"/>
+	
 	<script src="../menu.js"></script>
 	
-	<script>
-		$(document).ready(function () {
-				$("a.photo").fancybox({
-					padding: 0,
-					transitionIn: 'elastic',
-					transitionOut: 'elastic',
-					speedIn: 300,
-					speedOut: 300,
-					hideOnOverlayClick: false,
-					titlePosition: 'over',
-					cyclic: true,
-					enableEscapeButton: true,
-					titleShow: false
-				});
-			});
+<script type="module">
+	// Include Lightbox 
+	import PhotoSwipeLightbox from '/v5/photoswipe/photoswipe-lightbox.esm.js';
+	
+	const lightbox = new PhotoSwipeLightbox({
+	  // may select multiple "galleries"
+	  gallerySelector: '#gallery--simple',
+	
+	  // Elements within gallerySelector (slides)
+	  childSelector: 'a',
+	
+	  // Include PhotoSwipe Core
+	  // and use absolute path (that starts with http(s)://)
+	  pswpModule: 'photoswipe.esm.js'
+	});
+	lightbox.init();
 	</script>
+
 </head>
 
 <body>
@@ -61,6 +66,75 @@
 			</tr>
 		</table>
 	</div>
+
+
+
+
+
+
+
+
+
+	<div class="pswp-gallery pswp-gallery--single-column" id="gallery--simple">
+		<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" 
+		  data-pswp-width="1669" 
+		  data-pswp-height="2500" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+		</a>
+	  
+		<!-- cropped thumbnail -->
+		<a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" 
+		  data-pswp-width="1875" 
+		  data-pswp-height="2500" 
+		  data-cropped="true" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+		  Cropped
+		</a>
+		
+		<!-- data-pswp-src with custom URL in href -->
+		<a href="https://unsplash.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1666" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+		</a>
+	  
+		<!-- Without thumbnail -->
+		<a href="http://example.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1668" 
+		  target="_blank">
+		  No thumbnail
+		</a>
+	  
+		<!-- wrapped with any element -->
+		<div>
+		  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+			data-pswp-width="2500" 
+			data-pswp-height="1667" 
+			target="_blank">
+			<img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+		  </a>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<div class="gallery gg" style="margin: 10px;">
 		<div> 
@@ -124,7 +198,7 @@
 			</div>
 			<div>
 				<img class="icons" src="../images/phone.png" alt="house">
-				<a href="tel:88003012391" class="basement_text dc white">8(800)301-23-91</a>
+				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
 			</div>
 			<div>
 				<img class="icons" src="../images/mail.png" alt="house">
@@ -142,7 +216,7 @@
 			</div>
 			<div>
 				<img class="icons" src="../images/phone.png" alt="house">
-				<a href="tel:88003012391" class="basement_text dc white">8(800)301-23-91</a>
+				<nobr class="basement_text dc white">8-800-555-35-35</nobr>
 			</div>
 			<div>
 				<img class="icons" src="../images/mail.png" alt="house">
