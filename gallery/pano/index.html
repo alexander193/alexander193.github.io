@@ -22,10 +22,9 @@
       }
 	  
 		#progress {
-		  position: fixed;
-		  top: auto;
 		  -webkit-transition: opacity 0.5s ease;
 		  transition: opacity 0.5s ease;
+		font-size: 36px;
 		}
   
 		#progress.finish {
@@ -34,16 +33,21 @@
 	</style>
 </head>
 
-<body>
-	<p id="progress">0%</p>
-	
-	</div>
-
+<body style="width: 100%; height: 100%;">
 	<div class="pano-image">
 		<a href="../index.html" class="goback">
 			Назад
 		</a>
+		<table style="height: 100%; width: 100%;">
+			<tr>
+				<td align="center">
+					<p id="progress" style="margin-right: 2vw;">0%</p>
+				</td>
+			</tr>
+		</table>
 	</div>
+	
+
 	
 	<script src="three.min.js"></script>
 	<script src="panolens.min.js"></script>
