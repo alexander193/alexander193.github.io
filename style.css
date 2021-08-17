@@ -172,8 +172,8 @@ a {
 
 .grid-container4 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
 	padding: 30px;
 	max-width: 1000px;
 	margin: 0 auto;
