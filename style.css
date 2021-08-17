@@ -149,7 +149,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 30px;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   box-sizing: border-box;
 }
 .grid-container2 {
@@ -169,6 +169,16 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.grid-container4 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-gap: 30px;
+	padding: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+  }
+
 @media screen and (max-width: 1000px)	{
 	.grid-container {
 		display: none;
@@ -270,7 +280,7 @@ a {
 }
 .icons {
 	vertical-align: middle;
-	width: 40px;
+	width: 30px;
 }
 
 #example .new {
@@ -544,4 +554,34 @@ margin-left: 10vw;
 
 .goback:hover {
 	color: #E6AD6B;
+}
+
+.small_text {
+	color: black;
+	display: none;
+	font-size: 19px;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 550px) {
+    .small_text {
+		display: block;
+	}
+	.big_text {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 390px) {
+    .small_text {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 370px) {
+    .small_text {
+		font-size: 17px;
+	}
 }

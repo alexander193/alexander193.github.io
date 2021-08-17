@@ -33,17 +33,29 @@
 		</div>
 	</div>
 
-	<div style="background-color: #DBDBDB;">
-		<table height="600px" width="100%">
-			<tr>
-				<td style="text-align: center;">
-					<div style="margin-bottom: 20px;">
-						<nobr class="text bold gold">Наши котеджи в Калязине)</nobr></br>
-						<nobr class="text bold gold">8-800-555-35-35</nobr>
+	<div class="grid-container4">
+					<div style="text-align: center; height: 80px; line-height: 80px;">
+						<img src="../images/point.png" alt="house" style="width: 40px; vertical-align: middle;">
+						<nobr class="text bold black">г. Калязин, ул. Санаторная, д. 6</nobr>
 					</div>
-				</td>
-			</tr>
-		</table>
+	
+					<div style="text-align: center; height: 80px; line-height: 80px;">
+						<img class="icons" src="../images/phone.png" alt="house">
+						<a href="tel:88003012391" class="text bold black">8(800)301-23-91</a>
+					</div>
+					
+					<div style="text-align: center; height: 80px;">
+						<p class="text bold black" style="margin-top: 0px; margin-bottom: 5px;">Связаться с нами в мессенджерах</p>
+						
+						<img class="icons" src="../images/vk.png" alt="vk" style="margin-right: 15px;">
+						<img class="icons" src="../images/inst.png" alt="instagram" style="margin-right: 15px;">
+						<img class="icons" src="../images/whats.png" alt="whatsapp" style="margin-right: 15px;">
+						<img class="icons" src="../images/tele.png" alt="tele">
+					</div>
+					<div style="text-align: center; height: 80px; line-height: 80px;">
+						<img class="icons" src="../images/mail.png" alt="house">
+						<a href="mailto:info@riverhouses.ru" class="text bold black">info@riverhouses.ru</a>
+					</div>
 	</div>
 	<!--
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9396cb8cea4deb8cbede523ccca9e29e703ca8f0c3c34930cfcd180e2ca6e7e2&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -57,7 +69,7 @@
 		ymaps.ready(function () {
 				var myMap = new ymaps.Map('map', {
 					center: [57.243247, 37.821195],
-					zoom: 14
+					zoom: 13.4
 				}, {
 					searchControlProvider: 'yandex#search'
 				}),
@@ -67,9 +79,8 @@
 						'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
 					),
 
-					myPlacemark = new ymaps.Placemark([57.253246, 37.811195], {
-						hintContent: 'Собственный значок метки',
-						balloonContent: 'Это красивая метка'
+					myPlacemark = new ymaps.Placemark([57.255886, 37.811395], {
+						
 					}, {
 						// Опции.
 						// Необходимо указать данный тип макета.
@@ -77,10 +88,10 @@
 						// Своё изображение иконки метки.
 						iconImageHref: '../images/point.png',
 						// Размеры метки.
-						iconImageSize: [60, 60],
+						iconImageSize: [40, 40],
 						// Смещение левого верхнего угла иконки относительно
 						// её "ножки" (точки привязки).
-						iconImageOffset: [0, 0]
+						iconImageOffset: [-20, -40]
 					});
 
 				myMap.geoObjects
@@ -103,7 +114,7 @@
 			</div>
 			<div>
 				<img class="icons" src="../images/mail.png" alt="house">
-				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
+				<a href="mailto:info@riverhouses.ru"><nobr class="basement_text dc white">info@riverhouses.ru</nobr></a>
 			</div>
 		</div>
 		<div class="grid-base2" style="justify-items: center;">
@@ -121,7 +132,7 @@
 			</div>
 			<div>
 				<img class="icons" src="../images/mail.png" alt="house">
-				<nobr class="basement_text dc white">yourmail@mail.com</nobr>
+				<a href="mailto:info@riverhouses.ru"><nobr class="basement_text dc white">info@riverhouses.ru</nobr></a>
 			</div>
 		</div>
 		<div style="text-align: center;"><img src="../images/logotype.png" alt="house" style="width: 300px;"></div>
