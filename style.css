@@ -552,6 +552,7 @@ margin-left: 10vw;
 	font-family: 'Oswald', sans-serif;
 	font: bold;
 	font-size: 30px;
+	z-index: 99999;
 }
 
 .goback:hover {
