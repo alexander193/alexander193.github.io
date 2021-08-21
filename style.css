@@ -185,16 +185,23 @@ a {
 	grid-gap: 30px;
 	padding: 20px;
 	max-width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
   }
 
   .grid-container5_child {
-	  display: table-cell;
-	  line-height: 270px;
 	  background-color: red;
 	  height: 270px;
 	  background-size: cover;
-	  box-sizing: border-box;
 	  background-position: center center;
+  }
+
+  
+.grid-container5_child:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
   }
 
   .grid-container6 {
@@ -229,7 +236,16 @@ a {
   box-shadow: 0 0 2px rgba(0,0,0,1);
   transition: 0.5s;
   background-position: center center;
+  text-align: left;
 }
+
+.post-2:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+  }
+
 .post-3 {
   grid-row-start: 2;
   grid-column-start: 1;
@@ -238,7 +254,16 @@ a {
   box-shadow: 0 0 2px rgba(0,0,0,1);
   background: url('images/cottage2.jpg') center center;
   background-size: cover;
+  text-align: left;
 }
+
+.post-3:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+  }
+
 .post-6 {
   grid-row-start: 3;
   grid-column-start: 2;
@@ -257,15 +282,51 @@ a {
 	box-sizing: border-box;
 	box-shadow: 0 0 2px rgba(0,0,0,1);
 	transition: 0.5s;
-	background-position: center center;
+	text-align: left;
   }
+
+  .p2:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+  }
+
+  .innerr {
+	display: inline-block;
+	background-color: #D69D5B;
+	vertical-align: bottom;
+	text-align: center;
+  }
+  
+  .service {
+	  width: 220px;
+  }
+
+  .serv_text {
+	color: white;
+	margin: 0px;
+	font-size: 26px;
+	width: 220px;
+  }
+
   .p3 {
 	grid-row-start: 4;
 	grid-row-end: 6;
 	box-shadow: 0 0 2px rgba(0,0,0,1);
 	background: url('images/cottage2.jpg') center center;
 	background-size: cover;
+	text-align: left;
   }
+
+  
+  .p3:after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+  }
+
   .p6 {
 	grid-row-start: 6;
 	box-shadow: 0 0 2px rgba(0,0,0,1);
