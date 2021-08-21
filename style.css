@@ -192,8 +192,10 @@ a {
   .grid-container5_child {
 	  background-color: red;
 	  height: 270px;
-	  background-size: cover;
-	  background-position: center center;
+
+
+  background-size: cover;
+  text-align: left;
   }
 
   
