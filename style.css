@@ -186,16 +186,13 @@ a {
 	padding: 20px;
 	max-width: 1000px;
 	margin: 0 auto;
-	box-sizing: border-box;
   }
 
   .grid-container5_child {
 	  background-color: red;
 	  height: 270px;
-
-
-  background-size: cover;
-  text-align: left;
+	  background-size: cover;
+	  text-align: left;
   }
 
   
