@@ -14,6 +14,7 @@ function onProgress ( event ) {
 
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
+  progressElement.style.marginLeft = "-1px" * progressElement.width;
   //progressElement.style.width = progress + '%';
   if ( progress === 100 ) {
     progressElement.classList.add( 'finish' );
