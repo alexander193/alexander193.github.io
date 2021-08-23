@@ -5,16 +5,14 @@ progressElement = document.getElementById( 'progress' );
 
 function onEnter ( event ) {
 
-  progressElement.style.width = 0;
   progressElement.classList.remove( 'finish' );
 
 }
 
 function onProgress ( event ) {
-  progressElement.style.width = '120px';
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
-  //progressElement.style.width = progress + '%';
+  
   if ( progress === 100 ) {
     progressElement.classList.add( 'finish' );
     table.style.display = 'none';
@@ -22,7 +20,6 @@ function onProgress ( event ) {
 
 }
 
-progressElement.style.width = '120px';
 container = document.querySelector( '.pano-image' );
 
 panorama = new PANOLENS.ImagePanorama( '../../images/house.jpeg' );
