@@ -11,10 +11,9 @@ function onEnter ( event ) {
 }
 
 function onProgress ( event ) {
-
+  progressElement.style.width = '120px';
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
-  progressElement.style.marginRight = progressElement.width/2;
   //progressElement.style.width = progress + '%';
   if ( progress === 100 ) {
     progressElement.classList.add( 'finish' );
@@ -23,6 +22,7 @@ function onProgress ( event ) {
 
 }
 
+progressElement.style.width = '120px';
 container = document.querySelector( '.pano-image' );
 
 panorama = new PANOLENS.ImagePanorama( '../../images/house.jpeg' );
