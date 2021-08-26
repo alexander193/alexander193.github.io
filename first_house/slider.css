@@ -37,7 +37,7 @@
   }
 
   .slider__item:nth-child(1) {
-	background: url('images/main_house.jpg');
+	background: url('../images/main_house.jpg');
 	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -46,7 +46,7 @@
   }
 
   .slider__item:nth-child(2) {
-	background: url('images/main_house2.jpg');
+	background: url('../images/main_house2.jpg');
 	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
@@ -55,7 +55,7 @@
   }
 
   .slider__item:nth-child(3) {
-	background: url('images/main_house3.jpg');
+	background: url('../images/main_house3.jpg');
 	background-size: 100%;
 	margin: 0px;
 	padding: 0px;
