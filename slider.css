@@ -3,6 +3,7 @@
 	height: 41vw;
 	margin: 0 auto;
 	z-index: 0;
+	min-height: 40vh;
   }
 
   .slider__container {
@@ -22,6 +23,7 @@
 	max-width: 100%;
 	counter-increment: slide;
 	height: 41vw;
+	min-height: 40vh;
 	position: relative;
   }
 
@@ -37,8 +39,8 @@
   }
 
   .slider__item:nth-child(1) {
-	background: url('images/main_house.jpg');
-	background-size: 100%;
+	background: url('images/main_house.jpg') no-repeat center center;
+	background-size: cover;
 	margin: 0px;
 	padding: 0px;
 	height: 41vw;
@@ -46,8 +48,8 @@
   }
 
   .slider__item:nth-child(2) {
-	background: url('images/main_house2.jpg');
-	background-size: 100%;
+	background: url('images/main_house2.jpg') no-repeat center center;
+	background-size: cover;
 	margin: 0px;
 	padding: 0px;
 	height: 41vw;
@@ -55,8 +57,8 @@
   }
 
   .slider__item:nth-child(3) {
-	background: url('images/main_house3.jpg');
-	background-size: 100%;
+	background: url('images/main_house3.jpg') no-repeat center center;
+	background-size: cover;
 	margin: 0px;
 	padding: 0px;
 	height: 41vw;
