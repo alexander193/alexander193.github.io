@@ -483,13 +483,16 @@ a {
 
 @media( max-width: 450px) {
     #example {
-        opacity: 0;
+        font-size: 35px;
+        top: 60px;
     }
     #example3 {
-        opacity: 0;
+        font-size: 26.5px;
+        top: 115px;
     }
     #example4 {
-        opacity: 0;
+        font-size: 14.5px;
+        top: 165px;
     }
 }
 
