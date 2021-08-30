@@ -14,11 +14,12 @@
     <script src="slider.js"></script>
     <script src="menu.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const slider = new ChiefSlider('.slider', {
-                loop: true,
-                autoplay: true,
-                interval: 5000
+        document.addEventListener('DOMContentLoaded', function () {
+            new ChiefSlider('#slider-1', {
+                loop: true
+            });
+            new ChiefSlider('#slider-2', {
+                loop: true
             });
         });
     </script>
@@ -86,7 +87,7 @@
 
     <div class="container">
 
-        <div class="slider">
+        <div class="slider" id="slider-1">
             <div class="slider__container">
                 <p id="example">
                     Гостевые дома у реки
@@ -99,14 +100,23 @@
                 </p>
                 <div class="slider__wrapper">
                     <div class="slider__items">
-                        <div class="slider__item">
-
+                        <div class="slider__item" style="background: url('images/main_house.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover;">
                         </div>
-                        <div class="slider__item">
-                            <!-- Контент 2 слайда -->
+                        <div class="slider__item" style="background: url('images/main_house2.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover;">
                         </div>
-                        <div class="slider__item">
-                            <!-- Контент 3 слайда -->
+                        <div class="slider__item" style="background: url('images/main_house3.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover;">
                         </div>
                     </div>
                 </div>
@@ -284,7 +294,7 @@
                     </div>
                     <div class="post-3">
                         <div class="innerr">
-                            <a href="" style="color: white; margin: 0px; padding: 10px; font-size: 26px;">От 9000₽/сутки</a>
+                            <a href="second_house/index.html" style="color: white; margin: 0px; padding: 10px; font-size: 26px;">От 9000₽/сутки</a>
                         </div>
                     </div>
                     </a>
@@ -322,7 +332,7 @@
                     </div>
                     <div class="p3">
                         <div class="innerr">
-                            <a href="" style="color: white; margin: 0px; padding: 10px; font-size: 26px;">От 9000₽/сутки</a>
+                            <a href="second_house/index.html" style="color: white; margin: 0px; padding: 10px; font-size: 26px;">От 9000₽/сутки</a>
                         </div>
                     </div>
                     <div class="p6" style="background-color: #D69D5B;">
@@ -345,6 +355,90 @@
             </td>
         </tr>
     </table>
+
+    <div style="height: 100px; background-color: #DFDFDF; text-align: center; line-height: 100px;">
+        <p style="font-size: 30px; color: #D69D5B;">Чем у нас заняться?</p>
+    </div>
+    <div class="container" style="background-color: #DFDFDF; padding-bottom: 40px; height: 450px; min-height: 450px;">
+
+        <div class="slider" id="slider-2" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item si" style="background: url('services/gallery/bikes.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Велосипеды</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/boat.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Прогулка на катере</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/food.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Питание</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/master.jpeg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service" style="display: inline-block; background-color: #D69D5B; vertical-align: bottom; text-align: center;">
+                                <a href="" class="serv_text">Мастер классы</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/racket.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Инвентарь для отдыха</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/massage.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Массаж</a>
+                            </div>
+                        </div>
+                        <div class="slider__item si" style="background: url('services/gallery/deer.jpg') no-repeat center center;
+                        background-size: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        background-size: cover; height: 450px; min-height: 450px;">
+                            <div class="innerr service">
+                                <a href="" class="serv_text">Олени</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+        </div>
+
+    </div>
+
+
+
     <div style="background-color: #333333; padding-bottom: 20px; padding-top: 20px;">
         <div class="grid-base" style="justify-items: center;">
             <div>

@@ -826,3 +826,11 @@ a.photo:hover img {
         font-size: 17px;
     }
 }
+
+
+.si:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+}
