@@ -1,8 +1,7 @@
 .container {
-    width: calc(100% - 20px);
+    width: calc(100%);
     margin: 0 auto;
     z-index: 0;
-    padding: 10px;
     height: 450px;
 }
 
