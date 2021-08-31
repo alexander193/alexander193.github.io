@@ -18,8 +18,8 @@
 .slider__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
     counter-increment: slide;
     height: 450px;
     position: relative;
@@ -62,7 +62,7 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 50%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -198,6 +198,10 @@
     }
     .grid_container {
         grid-template-columns: 1fr;
+    }
+    .si {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
