@@ -217,7 +217,7 @@ a {
 }
 
 .grid-container5_child {
-    background-color: red;
+    background-color: white;
     height: 270px;
     background-size: cover;
     text-align: left;
@@ -336,6 +336,7 @@ a {
     margin: 0px;
     font-size: 26px;
     width: 220px;
+    user-select: none;
 }
 
 .p3 {
@@ -434,6 +435,7 @@ a {
     height: 7vw;
     padding-left: 12vw;
     font-size: 6vw;
+    user-select: none;
 }
 
 #example3 {
@@ -447,6 +449,7 @@ a {
     height: 7vw;
     padding-left: 12vw;
     font-size: 4.5vw;
+    user-select: none;
 }
 
 #example4 {
@@ -461,6 +464,7 @@ a {
     padding-left: 12vw;
     margin-top: -1vw;
     font-size: 2.5vw;
+    user-select: none;
 }
 
 @media( max-width: 900px) {
