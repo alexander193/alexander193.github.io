@@ -56,4 +56,4 @@ viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
 
 viewer.camera.position.set(2606.45, -4157.60, 930.37);
-this.viewer.getCamera().fov = 90;
+getCamera().fov = 90;
