@@ -56,4 +56,5 @@ viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
 
 viewer.getControl().target.set(2606.45, -4157.60, 930.37);
+viewer.cameraFov = 75;
 viewer.getControl().update();
