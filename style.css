@@ -267,6 +267,7 @@ a {
     text-align: left;
 }
 
+
 .post-2:after {
     content: '';
     display: inline-block;
