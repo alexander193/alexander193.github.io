@@ -55,6 +55,7 @@ viewer = new PANOLENS.Viewer( {
 viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
 //viewer.autoHideInfospot = false;
+viewer.camera.position.set(2606.45, -4157.60, 930.37);
 viewer.addUpdateCallback(function(){
   
 });
