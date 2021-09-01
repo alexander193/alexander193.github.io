@@ -13,33 +13,40 @@
 
 
 	<style>
-		 html, body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #000;
-      }
-	  
+		html,
+		body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-color: #000;
+		}
+
 		#progress {
 			display: block;
 			-webkit-transition: opacity 0.5s ease;
-		  	transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 			font-size: 36px;
 			margin-left: auto;
-   			margin-right: auto;
+			margin-right: auto;
 			z-index: 9999;
 		}
-  
+
 		#progress.finish {
-		  opacity: 0;
+			opacity: 0;
 		}
 	</style>
+
+	<script>
+		function back() {
+			window.open("../index.html", "_self");
+		}
+	</script>
 </head>
 
 <body style="width: 100%; height: 100%;">
 	<div class="pano-image">
-		<a href="../index.html" class="goback">
+		<a href="../index.html" class="goback" style="cursor: pointer;" onclick="back()">
 			Назад
 		</a>
 		<table style="height: 100%; width: 100%;" id="table_prog">
@@ -52,9 +59,9 @@
 			</tr>
 		</table>
 	</div>
-	
 
-	
+
+
 	<script src="three.min.js"></script>
 	<script src="panolens.min.js"></script>
 	<script src="infospot.js" type="module"></script>
