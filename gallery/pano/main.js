@@ -52,9 +52,9 @@ viewer = new PANOLENS.Viewer( {
     controlBar: true,
     output: 'console'
  } );
-viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
-//viewer.autoHideInfospot = false;
+viewer.add(panorama, panorama2);
+
 
 panorama.addEventListener( 'enter-fade-start', function() {
   viewer.tweenControlCenter( new THREE.Vector3(2606.45, -4157.60, 930.37), 0 );
