@@ -49,8 +49,7 @@ viewer = new PANOLENS.Viewer( {
     container: container,
     cameraFov: 75,
     autoHideInfospot: true,
-    controlBar: true,
-    output: 'console'
+    controlBar: true
  } );
 viewer.OrbitControls.noZoom = true;
 viewer.add(panorama, panorama2);
