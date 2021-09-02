@@ -788,6 +788,7 @@ a.photo:hover img {
 }
 
 .goback {
+    position: absolute;
     margin-top: 1vw;
     margin-left: 1vw;
     color: #D69D5B;
