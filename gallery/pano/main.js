@@ -48,6 +48,8 @@ panorama2.addEventListener( 'enter', onEnter );
 viewer = new PANOLENS.Viewer( { 
     container: container,
     cameraFov: 75,
+    autoHideInfospot: true,
+    controlBar: true,
     output: 'console'
  } );
 viewer.add(panorama, panorama2);
