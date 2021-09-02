@@ -20,7 +20,7 @@ function onProgress(event) {
 
 }
 
-container = document.querySelector('.pano-image');
+// container = document.querySelector('.pano-image');
 
 panorama = new PANOLENS.ImagePanorama('../../images/house.jpeg');
 panorama.addEventListener('progress', onProgress);
@@ -45,14 +45,7 @@ panorama2.addEventListener('enter', onEnter);
 // } );
 
 // panorama.add( infospot );
-viewer = new PANOLENS.Viewer({
-  container: container,
-  cameraFov: 75,
-  autoHideInfospot: true,
-  controlBar: true,
-  output: 'console'
-});
-viewer.OrbitControls.noZoom = true;
+viewer = new PANOLENS.Viewer();
 viewer.add(panorama, panorama2);
 
 
