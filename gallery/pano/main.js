@@ -45,10 +45,13 @@ panorama2.addEventListener( 'enter', onEnter );
 //} );
 
 //panorama.add( infospot );
-viewer = new PANOLENS.Viewer( {
-    output: 'console',
-    controlBar: false
- } );
+viewer = new PANOLENS.Viewer( { 
+  container: container,
+  cameraFov: 75,
+  autoHideInfospot: false,
+  controlBar: false,
+  output: 'console'
+} );
 viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
 
