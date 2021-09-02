@@ -54,6 +54,3 @@ viewer = new PANOLENS.Viewer( {
  } );
 viewer.add(panorama, panorama2);
 viewer.OrbitControls.noZoom = true;
-
-viewer.cameraFov = 75;
-viewer.camera.position.set(2606.45, -4157.60, 930.37);
