@@ -1,6 +1,10 @@
 const panorama = new PANOLENS.ImagePanorama('../../images/house.jpeg');
 const viewer = new PANOLENS.Viewer( { output: 'console' } );
-viewer.add( panorama );
+viewer.add(panorama);
+viewer.OrbitControls.noZoom = true;
+panorama.addEventListener('enter-fade-start', function () {
+  viewer.tweenControlCenter(new THREE.Vector3(2606.45, -4157.60, 930.37), 0);
+});
 
 // var panorama, panorama2, viewer, container, infospot, progress, progressElement, table;
 
