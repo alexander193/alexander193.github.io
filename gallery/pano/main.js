@@ -1,14 +1,15 @@
 const panorama = new PANOLENS.ImagePanorama('../../images/house.jpeg');
-panorama.addEventListener( 'progress', onProgress );
-panorama.addEventListener( 'enter', onEnter );
+panorama.addEventListener('progress', onProgress);
+panorama.addEventListener('enter', onEnter);
 
-const viewer = new PANOLENS.Viewer( { output: 'console' } );
+const viewer = new PANOLENS.Viewer({ output: 'console' });
 
 
-var progress, progressElement, table;
+var progress, progressElement, table, credit;
 
 table = document.getElementById('table_prog');
 progressElement = document.getElementById('progress');
+credit = document.getElementById('credit');
 
 function onEnter(event) {
   progressElement.classList.remove('finish');
@@ -21,6 +22,8 @@ function onProgress(event) {
   if (progress === 100) {
     progressElement.classList.add('finish');
     table.style.display = 'none';
+    credit.style.width = 'auto';
+    credit.style.height = 'auto';
   }
 }
 
