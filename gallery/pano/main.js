@@ -1,4 +1,7 @@
 const panorama = new PANOLENS.ImagePanorama('../../images/house.jpeg');
+panorama.addEventListener( 'progress', onProgress );
+panorama.addEventListener( 'enter', onEnter );
+
 const viewer = new PANOLENS.Viewer( { output: 'console' } );
 
 
