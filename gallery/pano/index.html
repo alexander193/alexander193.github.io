@@ -35,6 +35,9 @@
 		#progress.finish {
 			opacity: 0;
 		}
+		.pano-image {
+			z-index: 0;
+		}
 	</style>
 
 	<script>
@@ -44,8 +47,8 @@
 	</script>
 </head>
 
-<body style="width: 100%; height: 100%;">
-	<div class="pano-image">
+<body style="width: 100%; height: 100%; margin: 0; overflow: hidden;">
+	<!-- <div class="pano-image">
 			<a href="../index.html" class="goback" style="position: absolute; cursor: pointer; z-index: 9999999;" onclick="back()">
 				Назад
 			</a>
@@ -58,7 +61,8 @@
 				</td>
 			</tr>
 		</table>
-	</div>
+	</div> -->
+    <div class="credit"><a href="https://github.com/pchen66/panolens.js">Panolens.js</a> image panorama example. Image from <a href="http://adaptivesamples.com/tag/equirectangular/">Adaptive Samples</a></div>
 
 
 
