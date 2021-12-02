@@ -45,6 +45,10 @@ body {
     background-color: white;
 }
 
+.snow {
+    background-image: url(images/snow.png);
+}
+
 .wallurl {
     border-radius: 2px;
     padding: 10px;
@@ -205,6 +209,7 @@ a {
     padding: 10px;
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .grid-container5 {
@@ -214,10 +219,52 @@ a {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: transparent;
+}
+
+
+.t2 {
+    display: none;
+}
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 375px) {
+    .grid-container4 {
+        width: 100%;
+        padding: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .grid-container5 {
+        grid-template-columns: 280px, 280px;
+    }
+    #logo {
+        width: 72%;
+        height: 72%;
+    }
+    .black {
+        font-size: 18px;
+    }
+    .t2 {
+        display: inline;
+    }
+    .t1 {
+        display: none;
+    }
+    .grid-container6 {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
 }
 
 .grid-container5_child {
-    background-color: white;
+    background-color: transparent;
     height: 270px;
     background-size: cover;
     text-align: left;
@@ -228,15 +275,6 @@ a {
     display: inline-block;
     height: 100%;
     vertical-align: bottom;
-}
-
-.grid-container6 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-gap: 10px;
-    padding: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -686,6 +724,8 @@ div.scrollup:hover {
     cursor: pointer;
     z-index: 9999;
 }
+
+
 
 .hamburger {
     width: 30px;
