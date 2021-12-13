@@ -2,6 +2,18 @@ const panorama = new PANOLENS.ImagePanorama('../../images/DJI_0885.JPG');
 panorama.addEventListener('progress', onProgress);
 panorama.addEventListener('enter', onEnter);
 
+const panorama2 = new PANOLENS.ImagePanorama('../../images/DJI_0905.JPG');
+panorama2.addEventListener('progress', onProgress);
+panorama2.addEventListener('enter', onEnter);
+
+infospot = new PANOLENS.Infospot(1000, '../../images/strelka.png');
+infospot.position.set(4193.80, -2485.80, -1071.47);
+infospot.addEventListener( 'click', function(){
+viewer.setPanorama( panorama2 );
+//infospot2.position.set(-2854.75, -2548.67, -3212.39);
+//panorama2.add( infospot2 );
+} );
+
 const viewer = new PANOLENS.Viewer({ output: 'console' });
 
 
@@ -30,7 +42,7 @@ function onProgress(event) {
 viewer.add(panorama);
 viewer.OrbitControls.noZoom = true;
 panorama.addEventListener('enter-fade-start', function () {
-  viewer.tweenControlCenter(new THREE.Vector3(2606.45, -4157.60, 930.37), 0);
+  viewer.tweenControlCenter(new THREE.Vector3(4193.80, -2485.80, -1071.47), 0);
 });
 
 // var panorama, panorama2, viewer, container, infospot, progress, progressElement, table;
