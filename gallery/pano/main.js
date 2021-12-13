@@ -6,10 +6,10 @@ const panorama2 = new PANOLENS.ImagePanorama('../../images/DJI_0905.JPG');
 panorama2.addEventListener('progress', onProgress);
 panorama2.addEventListener('enter', onEnter);
 
-infospot = new PANOLENS.Infospot(1200, '../../images/strelka2.png');
+infospot = new PANOLENS.Infospot(500, '../../images/strelka2.png');
 infospot.position.set(4193.80, -2485.80, -1071.47);
 
-infospot2 = new PANOLENS.Infospot(1200, '../../images/strelka2.png');
+infospot2 = new PANOLENS.Infospot(500, '../../images/strelka2.png');
 
 infospot.addEventListener( 'click', function(){
 viewer.setPanorama( panorama2 );
