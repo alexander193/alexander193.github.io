@@ -1,4 +1,4 @@
-const panorama = new PANOLENS.ImagePanorama('../../images/house.jpeg');
+const panorama = new PANOLENS.ImagePanorama('../../images/DJI_0885.jpeg');
 panorama.addEventListener('progress', onProgress);
 panorama.addEventListener('enter', onEnter);
 
