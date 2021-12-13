@@ -6,18 +6,27 @@ const panorama2 = new PANOLENS.ImagePanorama('../../images/DJI_0905.JPG');
 panorama2.addEventListener('progress', onProgress);
 panorama2.addEventListener('enter', onEnter);
 
-infospot = new PANOLENS.Infospot(1000, '../../images/strelka2.png');
+infospot = new PANOLENS.Infospot(2000, '../../images/strelka2.png');
 infospot.position.set(4193.80, -2485.80, -1071.47);
+
+infospot2 = new PANOLENS.Infospot(2000, '../../images/strelka2.png');
+
 infospot.addEventListener( 'click', function(){
 viewer.setPanorama( panorama2 );
-//infospot2.position.set(-2854.75, -2548.67, -3212.39);
-//panorama2.add( infospot2 );
+infospot2.position.set(2040.16, -2996.87, 3437.32);
+panorama2.add( infospot2 );
 } );
 
 const viewer = new PANOLENS.Viewer({ output: 'console' });
 
 
 var progress, progressElement, table, credit;
+
+infospot2.addEventListener( 'click', function(){
+  viewer.setPanorama( panorama );
+  infospot.position.set(4193.80, -2485.80, -1071.47);
+  panorama.add( infospot );
+  } );
 
 table = document.getElementById('table_prog');
 progressElement = document.getElementById('progress');
@@ -45,11 +54,14 @@ panorama.addEventListener('enter-fade-start', function () {
   viewer.tweenControlCenter(new THREE.Vector3(4193.80, -2485.80, -1071.47), 0);
 });
 
+panorama2.addEventListener('enter-fade-start', function () {
+  viewer.tweenControlCenter(new THREE.Vector3(1727.11, -1274.05, -4505.41), 0);
+});
+
 panorama.add( infospot );
 viewer = new PANOLENS.Viewer({
 container: container,
 cameraFov: 75,
-autoHideInfospot: true,
 controlBar: true,
 output: 'console'
 });
