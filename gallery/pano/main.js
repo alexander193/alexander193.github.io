@@ -10,7 +10,7 @@ infospot = new PANOLENS.Infospot(500, '../../images/infospot.png');
 infospot.position.set(4183.83, -2706.17, -320.17);
 infospot.addEventListener( 'click', function(){
   viewer.setPanorama( panorama2 );
-  infospot2.position.set(2040.16, -2996.87, 3437.32);
+  infospot2.position.set(-3606.84, 1414.17, -3150.38);
   panorama2.add( infospot2 );
   viewer.tweenControlCenter(new THREE.Vector3(1727.11, -1274.05, -4505.41), 0);
   } );
