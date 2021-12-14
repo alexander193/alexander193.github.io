@@ -24,6 +24,7 @@ var progress, progressElement, table, credit;
 
 infospot2.addEventListener( 'click', function(){
   viewer.setPanorama( panorama );
+  infospot.position.set(4183.83, -2706.17, -320.17);
   panorama.add( infospot );
   } );
 
@@ -47,6 +48,12 @@ function onProgress(event) {
   }
 }
 
+viewer.add(panorama, panorama2);
+viewer.OrbitControls.noZoom = true;
+panorama.addEventListener('enter-fade-start', function () {
+  viewer.tweenControlCenter(new THREE.Vector3(4193.80, -2485.80, -1071.47), 0);
+});
+
 panorama.add( infospot );
 viewer = new PANOLENS.Viewer({
 container: container,
@@ -54,13 +61,6 @@ cameraFov: 75,
 controlBar: true,
 output: 'console'
 });
-
-viewer.add(panorama, panorama2);
-viewer.OrbitControls.noZoom = true;
-panorama.addEventListener('enter-fade-start', function () {
-  viewer.tweenControlCenter(new THREE.Vector3(4193.80, -2485.80, -1071.47), 0);
-});
-
 
 // var panorama, panorama2, viewer, container, infospot, progress, progressElement, table;
 
