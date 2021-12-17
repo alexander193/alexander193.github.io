@@ -506,6 +506,17 @@ a {
     user-select: none;
 }
 
+#containerrr {
+    display: none;
+}
+
+.grid_container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
 @media( max-width: 900px) {
     #example {
         padding-left: 30px;
@@ -521,6 +532,12 @@ a {
         padding-left: 30px;
         font-size: 20.7px;
         top: 157px;
+    }
+    #containerrr {
+        display: block;
+    }
+    .grid_container2 {
+        display: none;
     }
 }
 
@@ -715,6 +732,24 @@ div.scrollup:hover {
     }
     .logotype {
         margin-left: 0px;
+    }
+}
+
+#small_logo {
+    display: none;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-left: 20px;
+    height: 50px;
+    padding-top: 3px;
+}
+
+@media( max-width: 600px) {
+    #logo {
+        display: none;
+    }
+    #small_logo {
+        display: block;
     }
 }
 
