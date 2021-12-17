@@ -177,12 +177,7 @@
     max-width: 1400px;
 }
 
-.grid_container2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    max-width: 1400px;
-}
+
 
 .grid_container3 {
     display: none;
