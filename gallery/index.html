@@ -19,17 +19,20 @@
   <script src="../travelline-style.js"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      new ChiefSlider('#slider-1', {
-        loop: true
-      });
-      new ChiefSlider('#slider-2', {
-        loop: true
-      });
-      new ChiefSlider('#slider-3', {
-        loop: true
-      });
-    });
+    $(document).ready(function () {
+				$("a.photo").fancybox({
+					padding: 0, 
+					transitionIn: 'elastic',
+					transitionOut: 'elastic',
+					speedIn: 300,
+					speedOut: 300,
+					hideOnOverlayClick: false,
+					titlePosition: 'over',
+					cyclic: true,
+					enableEscapeButton: true,
+					titleShow: false
+				});
+			});
   </script>
 </head>
 
@@ -83,174 +86,118 @@
     <p style="color: #D69D5B; font-size: 32px; margin: 0px; margin-top: 15px; margin-bottom: 15px; font-weight: bold; pointer-events: none;">Наши участки</p>
   </div>
 
-  <div id="slider-1">
-    <div class="slider__container">
-      <div class="slider__wrapper">
-        <div class="slider__items">
-          <div class="slider__item" style="background: url('../images/places/03.jpg') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/places/04.jpg') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/places/05.jpg') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="slider__control" data-slide="prev"></a>
-    <a href="#" class="slider__control" data-slide="next"></a>
-  </div>
+
+
+
+  <div class="gallery gg" style="margin: 10px;">
+		<div> 
+			<a rel="gallery" class="photo" href="../images/cottage1.jpg" title="Картинка 1"><img
+				src="../images/cottage1.jpg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/cottage2.jpg" title="Картинка 2"><img
+				src="../images/cottage2.jpg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/places/03.jpg" title="Картинка 3"><img
+				src="../images/places/03.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/places/04.jpg" title="Картинка 4"><img
+				src="../images/places/04.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/places/05.jpg" title="Картинка 5"><img
+				src="../images/places/05.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+	</div>
+
+
+ 
 
   <div style="text-align: center;">
     <p style="color: #D69D5B; font-size: 32px; margin: 0px; margin-top: 15px; margin-bottom: 15px; font-weight: bold; pointer-events: none;">Наши дома</p>
   </div>
 
-  <div id="slider-2">
-    <div class="slider__container">
-      <div class="slider__wrapper">
-        <div class="slider__items">
-          <div class="slider__item" style="background: url('../images/interior/1.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/2.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/3.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/4.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/5.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/6.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/7.png') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/interior/8.jpg') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-        </div>
-      </div>
+  
+  <div class="gallery gg" style="margin: 10px;">
+		<div> 
+			<a rel="gallery" class="photo" href="../images/interior/01.jpeg" title="Картинка 1"><img
+				src="../images/interior/01.jpeg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/02.jpeg" title="Картинка 2"><img
+				src="../images/interior/02.jpeg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/03.jpeg" title="Картинка 3"><img
+				src="../images/interior/03.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/04.jpeg" title="Картинка 4"><img
+				src="../images/interior/04.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/05.jpeg" title="Картинка 5"><img
+				src="../images/interior/05.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div> 
+			<a rel="gallery" class="photo" href="../images/interior/06.jpeg" title="Картинка 6"><img
+				src="../images/interior/06.jpeg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/07.jpeg" title="Картинка 7"><img
+				src="../images/interior/07.jpeg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/08.jpeg" title="Картинка 8"><img
+				src="../images/interior/08.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/09.jpeg" title="Картинка 9"><img
+				src="../images/interior/09.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/10.jpeg" title="Картинка 10"><img
+				src="../images/interior/10.jpeg" width="350" height="240" alt="" /></a>	
     </div>
-    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-    <a href="#" class="slider__control" data-slide="prev"></a>
-    <a href="#" class="slider__control" data-slide="next"></a>
-  </div>
+    <div>
+			<a rel="gallery" class="photo" href="../images/interior/11.jpeg" title="Картинка 11"><img
+				src="../images/interior/11.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/interior/12.jpeg" title="Картинка 12"><img
+				src="../images/interior/12.jpeg" width="350" height="240" alt="" /></a>	
+		</div>
+	</div>
 
   <div style="text-align: center;">
     <p style="color: #D69D5B; font-size: 32px; margin: 0px; margin-top: 15px; margin-bottom: 15px; font-weight: bold; pointer-events: none;">Наш город</p>
   </div>
 
-  <div id="slider-3">
-    <div class="slider__container">
-      <div class="slider__wrapper">
-        <div class="slider__items">
-          <div class="slider__item" style="background: url('../images/city/01.JPG') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/city/02.JPG') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/city/03.JPG') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/city/04.JPG') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-          <div class="slider__item" style="background: url('../images/city/05.JPG') no-repeat center center;
-			  background-size: 100%;
-                        margin: 0px;
-                        padding: 0px;
-                        background-size: cover;
-                            flex: 0 0 100%;
-                            max-width: 100%;">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-  </div>
+  <div class="gallery gg" style="margin: 10px;">
+		<div> 
+			<a rel="gallery" class="photo" href="../images/city/01.jpg" title="Картинка 1"><img
+				src="../images/city/01.jpg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/city/02.jpg" title="Картинка 2"><img
+				src="../images/city/02.jpg" width="350" height="240" alt="" /></a>
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/city/03.jpg" title="Картинка 3"><img
+				src="../images/city/03.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/city/04.jpg" title="Картинка 4"><img
+				src="../images/city/04.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+		<div>
+			<a rel="gallery" class="photo" href="../images/city/05.jpg" title="Картинка 5"><img
+				src="../images/city/05.jpg" width="350" height="240" alt="" /></a>	
+		</div>
+	</div>
+
   <div style="background-color: #333333;">
     <div class="snow">
       <div class="grid-base" style="justify-items: center;">
