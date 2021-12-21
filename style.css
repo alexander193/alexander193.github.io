@@ -735,6 +735,25 @@ div.scrollup:hover {
     }
 }
 
+.photography {
+    width: 350px;
+    height: 240px;
+}
+
+@media( max-width: 370px) {
+    .photography {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media( max-width: 340px) {
+    .photography {
+        width: 250px;
+        height: auto;
+    }
+}
+
 #small_logo {
     display: none;
     vertical-align: middle;
