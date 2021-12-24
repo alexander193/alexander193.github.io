@@ -37,8 +37,7 @@ function onEnter(event) {
 }
 
 function onProgress(event) {
-  credit.style.display = 'block';
-  table.style.display = 'block';
+  table.style.display = 'inline-block';
     credit.style.width = '100%';
     credit.style.height = '100%';
 
@@ -47,7 +46,6 @@ function onProgress(event) {
 
   if (progress === 100) {
     progressElement.classList.add('finish');
-    credit.style.display = 'block';
     table.style.display = 'none';
     credit.style.width = 'auto';
     credit.style.height = 'auto';
