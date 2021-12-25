@@ -38,14 +38,14 @@ function onEnter(event) {
 }
 
 function onProgress(event) {
+  credit.style.backgroundColor = 'black';
+
   table.style.display = 'block';
   table.style.width = '100vw';
   table.style.height = '100vh';
 
   divvv.style.width = '100vw';
   divvv.style.height = '100vh';
-
-  //credit.style.backgroundColor = 'black';
 
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
@@ -57,7 +57,7 @@ function onProgress(event) {
     credit.style.height = 'auto';
     divvv.style.width = 'auto';
     divvv.style.height = 'auto';
-    //credit.style.backgroundColor = 'transparent';
+    credit.style.backgroundColor = 'transparent';
   }
 }
 
