@@ -45,6 +45,8 @@ function onProgress(event) {
   divvv.style.width = '100vw';
   divvv.style.height = '100vh';
 
+  credit.style.backgroundColor = 'black';
+
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
 
@@ -53,6 +55,9 @@ function onProgress(event) {
     table.style.display = 'none';
     credit.style.width = 'auto';
     credit.style.height = 'auto';
+    divvv.style.width = 'auto';
+    divvv.style.height = 'auto';
+    credit.style.backgroundColor = 'transparent';
   }
 }
 
