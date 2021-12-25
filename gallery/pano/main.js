@@ -37,9 +37,9 @@ function onEnter(event) {
 }
 
 function onProgress(event) {
-  table.style.display = 'inline-block';
-    credit.style.width = '100vw';
-    credit.style.height = '100vh';
+  table.style.display = 'block';
+  table.style.width = '100vw';
+  table.style.height = '100vh';
 
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
