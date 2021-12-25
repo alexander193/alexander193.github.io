@@ -9,6 +9,7 @@ panorama2.addEventListener('enter', onEnter);
 infospot = new PANOLENS.Infospot(500, '../../images/infospot.png');
 infospot.position.set(4183.83, -2706.17, -320.17);
 infospot.addEventListener( 'click', function(){
+  credit.style.backgroundColor = 'black';
   viewer.setPanorama( panorama2 );
   infospot2.position.set(-3606.84, 1414.17, -3150.38);
   panorama2.add( infospot2 );
@@ -23,6 +24,7 @@ const viewer = new PANOLENS.Viewer({ output: 'console' });
 var progress, progressElement, table, credit;
 
 infospot2.addEventListener( 'click', function(){
+  credit.style.backgroundColor = 'black';
   viewer.setPanorama( panorama );
   infospot.position.set(4183.83, -2706.17, -320.17);
   panorama.add( infospot );
@@ -38,8 +40,6 @@ function onEnter(event) {
 }
 
 function onProgress(event) {
-  credit.style.backgroundColor = 'black';
-
   table.style.display = 'block';
   table.style.width = '100vw';
   table.style.height = '100vh';
