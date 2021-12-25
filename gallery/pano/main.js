@@ -31,6 +31,7 @@ infospot2.addEventListener( 'click', function(){
 table = document.getElementById('table_prog');
 progressElement = document.getElementById('progress');
 credit = document.getElementById('credit');
+divvv = document.getElementById('divvv');
 
 function onEnter(event) {
   progressElement.classList.remove('finish');
@@ -40,6 +41,9 @@ function onProgress(event) {
   table.style.display = 'block';
   table.style.width = '100vw';
   table.style.height = '100vh';
+
+  divvv.style.width = '100vw';
+  divvv.style.height = '100vh';
 
   progress = event.progress.loaded / event.progress.total * 100;
   progressElement.textContent = Math.round(progress) + '%';
