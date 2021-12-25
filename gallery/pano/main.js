@@ -35,8 +35,10 @@ progressElement = document.getElementById('progress');
 credit = document.getElementById('credit');
 divvv = document.getElementById('divvv');
 
-progressElement.style.paddingTop = 'calc(50vh - 120px)';
+progressElement.style.paddingTop = 'calc(50vh - 53px)';
 progressElement.style.paddingBottom = '50vh';
+progressElement.style.marginRight = 'calc(50vw - 60px)';
+progressElement.style.marginLeft = 'calc(50vw - 60px)';
 
 function onEnter(event) {
   progressElement.classList.remove('finish');
