@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Аренда коттеджей на берегу Волги в городе Калязин.">
+    <meta name="description" content="Цены за проживание в наших коттеджах.">
 	<title>Проживание и цены</title>
 	<link rel="shortcut icon" href="../images/ico.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,13 +40,36 @@
 		</div>
 	</div>
 
-	<!-- start TL Search form script -->
+	
+	<div id="booking_iframe" style="padding-bottom: 32px;position: relative;">
+        <div id="bn_iframe" style='position: absolute;right: 0;margin-top: 12px;font-family: "Proxima nova", "Helvetica Neue", "Cera Pro Medium", Arial, Helvetica, sans-serif;font-size: 12px;line-height: 1em;opacity: 0.5;z-index: 3;bottom:0;'>
+        <div style='color: #1403FC !important; background: rgba(0, 0, 0, 0) !important;'>
+        <a style='color: #808080 !important; background: #ffffff !important;' href="http://bnovo.ru/" id="bnovo_link" target="_blank">Система управления отелем Bnovo ©</a>
+        </div></div>
+        </div>
+        <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+        <script type="text/javascript">
+          var BookingIframe = new BookingIframe({
+            html_id: 'booking_iframe',
+            uid: '90302f00-cf8f-4a06-9ce5-1b819980f814',
+            lang: 'ru',
+            width: 'auto',
+            height: 'auto',
+            rooms: '',
+            IsMobile: '0',
+            scroll_to_rooms: '0'
+          })
+          BookingIframe.init()
+        </script>
+
+
+	<!-- start TL Search form script
 	<div id='block-search'>
 		<div id='tl-search-form' class='tl-container'>
 			<noindex><a href='http://www.travelline.ru/products/tl-hotel' rel='nofollow'>Модуль онлайн-бронирования</a></noindex>
 		</div>
 	</div>
-	<!-- end TL Search form script -->
+	 end TL Search form script -->
 	
 	<div style="background-color: #DBDBDB; padding: 10px; text-align: center;">
 		<p class="gold bold">Прейскурант проживания</p>
