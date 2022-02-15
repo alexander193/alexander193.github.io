@@ -365,6 +365,12 @@ a {
     vertical-align: bottom;
     text-align: center;
 }
+.innerr2 {
+    display: inline-block;
+    background-color: #D69D5B;
+    vertical-align: top;
+    left: 0px;
+}
 
 .service {
     width: 220px;
@@ -455,6 +461,19 @@ a {
     }
     .grid-base2 {
         display: grid;
+    }
+}
+
+.disappearing2 {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .disappearing {
+        display: none;
+    }
+    .disappearing2 {
+        display: block;
     }
 }
 
