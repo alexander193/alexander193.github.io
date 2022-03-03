@@ -73,76 +73,96 @@
 	</div>
 	 end TL Search form script -->
 	
-	<div style="    background: url('../images/cottage1.jpg') center center;	padding: 10px; text-align: center;">
-		<p class="gold bold">Прейскурант проживания</p>
-		<table border="2px" style="border: #D69D5B;  border-collapse: collapse; margin-left: auto; margin-right: auto;">
+	<div style="background: url('../images/cottage_black.jpg') center center; background-size: cover; padding: 10px; text-align: center; margin: 0 auto;">
+		<p id="decrease_text" class="gold bold">Стоимость проживания (Коттедж #1, Коттедж #2)</p>
+		<table id="big_table" style="margin: 0 auto; padding-bottom: 40px; max-width: 1000px; border-collapse: collapse;">
 			<tr>
-				<td style="border: none;">
-					
+				<td style="margin-right: 40px; width: 50vw;">
 				</td>
-				<td>
-					Проживание
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text">Пт-Сб</p>
 				</td>
-				<td>
-					Стоимость
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text">Вс-Пн</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text" style="margin-right: 40px;">До 4-х человек</p>
+				</td>
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text">10000₽/сутки</p>
+				</td>
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text">12000₽/сутки</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text" style="margin-right: 40px;">Дополнительное место</p>
+				</td>
+				<td colspan="2" style="text-align: center; border-bottom: 2px solid white;">
+					<p class="price_text">1000₽/сутки</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border-bottom: 2px solid white;">
+					<p class="price_text" style="margin-right: 40px;">Дети до 3-х лет</p>
+				</td>
+				<td colspan="2" style="text-align: center; border-bottom: 2px solid white;">
+					<p class="price_text">Бесплатно</p>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					С воскресенья по четверг
+					<p class="price_text" style="margin-right: 40px;">Дети с 4 до 17 лет</p>
 				</td>
-				<td>
-					До 4-х человек
-				</td>
-				<td>
-					10000
-				</td>
-			</tr>
-			<tr>
-				<td>
-					С пятницы по субботу
-				</td>
-				<td>
-					До 4-х человек
-				</td>
-				<td>
-					12000
-				</td>
-			</tr>
-			<tr>
-				<td rowspan="3" style="border: none;">
-					
-				</td>
-				<td>
-					1 дополнительное место
-				</td>
-				<td>
-					1000
-				</td>
-			</tr>
-			<tr>
-				
-				<td>
-					Дети до 3 лет
-				</td>
-				<td>
-					бесплатно
-				</td>
-			</tr>
-			<tr>
-
-				<td>
-					Дети с 4 до 17
-				</td>
-				<td>
-					По цене взрослого
+				<td colspan="2" style="text-align: center;">
+					<p class="price_text">По цене взрослого</p>
 				</td>
 			</tr>
 		</table>
+		<div id="small_table">
+			<div style="padding-bottom: 10px;">
+				<nobr class="price_text_small" style="font-size: 18px; margin-right: 10px;">Проживание с воскресенья по четверг<wbr/> (до 4-х человек)</nobr>
+				<nobr class="price_text_small" style="font-size: 18px; color: #D69D5B;">10000₽/сутки</nobr></br>
+			</div>
+			<div style="padding-bottom: 10px;">
+				<nobr class="price_text_small" style="font-size: 18px; margin-right: 10px;">Проживание с пятницы по субботу<wbr/> (до 4-х человек)</nobr>
+			<nobr class="price_text_small" style="font-size: 18px; color: #D69D5B;">12000₽/сутки</nobr></br>
+			</div>
+			<div style="padding-bottom: 10px;">
+				<nobr class="price_text_small" style="font-size: 18px; margin-right: 10px;">Дополнительное место</nobr>
+			<nobr class="price_text_small" style="font-size: 18px; color: #D69D5B;">1000₽/сутки</nobr></br>
+			</div>
+			<div style="padding-bottom: 10px;">
+				<nobr class="price_text_small" style="font-size: 18px; margin-right: 10px;">Дети до 3-х лет</nobr>
+			<nobr class="price_text_small" style="font-size: 18px; color: #D69D5B;">Бесплатно</nobr></br>
+			</div>
+			<div style="padding-bottom: 20px;">
+				<nobr class="price_text_small" style="font-size: 18px; margin-right: 10px;">Дети с 4 до 17 лет</nobr>
+			<nobr class="price_text_small" style="font-size: 18px; color: #D69D5B;">По цене взрослого</nobr>
+			</div>
+		</div>
 	</div>
 	
 	<div style="background-color: #333333">
 	<div class="snow">
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+	ym(87696258, "init", {
+		 clickmap:true,
+		 trackLinks:true,
+		 accurateTrackBounce:true,
+		 webvisor:true
+	});
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/87696258" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
 		<div class="grid-base" style="justify-items: center;">
 			<div>
 				<a href="https://www.instagram.com/river_houses_kalyazin/" target="_blank" class="basement_text dc white" style="text-decoration: none;">Instagram

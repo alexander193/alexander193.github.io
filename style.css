@@ -44,11 +44,11 @@ body {
     height: 60px;
     background-color: white;
 }
-
+/*
 .snow {
     background-image: url(images/snow.png);
 }
-
+*/
 .wallurl {
     border-radius: 2px;
     padding: 10px;
@@ -422,6 +422,7 @@ a {
     border: 2px solid #777777;
     color: #777777;
 }
+
 
 .test {
     transition: 0.3s;
@@ -1021,4 +1022,31 @@ a.photo:hover img {
     display: inline-block;
     height: 100%;
     vertical-align: bottom;
+}
+
+.price_text {
+    color: white;
+    padding: 10px;
+}
+.price_text_small {
+    color: white;
+}
+
+#small_table {
+    display: none;
+}
+
+#decrease_text {
+    font-size: 30px;
+}
+@media screen and (max-width: 850px) {
+    #big_table {
+        display: none;
+    }
+    #small_table {
+        display: inline-block;
+    }
+    #decrease_text {
+        font-size: 24px;
+    }
 }
