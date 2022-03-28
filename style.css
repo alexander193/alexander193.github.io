@@ -612,36 +612,80 @@ a {
     #example {
         padding-left: 30px;
         font-size: 50px;
-        top: 0px;
+        top: 30px;
     }
     #example3 {
         padding-left: 30px;
         font-size: 38px;
-        top: 60px;
+        top: 100px;
     }
     #example4 {
         padding-left: 30px;
         font-size: 20.7px;
-        top: 117px;
+        top: 167px;
     }
     #example5 {
         margin-left: 30px;
-        top: 157px;
+        top: 207px;
+    }
+}
+
+@media( max-width: 700px) {
+    #example {
+        padding-left: 30px;
+        font-size: 44px;
+        top: 30px;
+    }
+    #example3 {
+        padding-left: 30px;
+        font-size: 33px;
+        top: 100px;
+    }
+    #example4 {
+        padding-left: 30px;
+        font-size: 18px;
+        top: 167px;
+    }
+    #example5 {
+        margin-left: 30px;
+        top: 237px;
     }
 }
 
 @media( max-width: 450px) {
     #example {
+        font-size: 40px;
+        top: 10px;
+    }
+    #example3 {
+        font-size: 30px;
+        top: 70px;
+    }
+    #example4 {
+        font-size: 16.5px;
+        top: 122px;
+    }
+    #example5 {
+        top: 170px;
+        padding: 5px; padding-left: 35px; padding-right: 0px;
+    }
+}
+
+@media( max-width: 360px) {
+    #example {
         font-size: 35px;
+        top: 10px;
     }
     #example3 {
         font-size: 26.5px;
+        top: 70px;
     }
     #example4 {
         font-size: 14.5px;
+        top: 122px;
     }
     #example5 {
-        top: 142px;
+        top: 155px;
         padding: 5px; padding-left: 35px; padding-right: 0px;
     }
 }
@@ -1049,4 +1093,11 @@ a.photo:hover img {
     #decrease_text {
         font-size: 24px;
     }
+}
+
+.smaller {
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
