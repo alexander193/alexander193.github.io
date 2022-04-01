@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /index.html
+Disallow: /5f105debffa9319d99f39302e25b24cc2e8ed906cbcbbe1556bd459957af25ae/index.html
 Host: riverhouses.ru
 Sitemap: https://riverhouses.ru
